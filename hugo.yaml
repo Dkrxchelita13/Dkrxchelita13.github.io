@@ -1,4 +1,4 @@
-baseURL: https://dkrxchelita13.github.io/LGTR.github.io/
+baseURL: https://dkrxchelita13.github.io/
 
 
 
@@ -72,7 +72,7 @@ params:
     favicon: /images/site/favicon.png
 
   # GitHub repo of your site
-  gitRepo: https://github.com/Dkrxchelita13/LGTR.github.io
+  gitRepo: https://github.com/Dkrxchelita13/Dkrxchelita13.github.io
   # Default branch of your Git repo
   gitBranch: main
 
