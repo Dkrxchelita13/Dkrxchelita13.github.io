@@ -1,7 +1,9 @@
-baseURL: https://hugo-toha.github.io
+baseURL: https://LGTR.github.io
 
-languageCode: bn
-title: "John's Blog"
+
+
+languageCode: es
+title: "Luz Graciela Torales Rodríguez"
 
 # Use Hugo modules to add theme
 module:
@@ -23,12 +25,12 @@ languages:
   en:
     languageCode: en
     languageName: English
-    title: "John's Blog"
+    title: "Luz Graciela Torales Rodriguez"
     weight: 1
-  bn:
-    languageCode: bn
-    languageName: বাংলা
-    title: জনের ব্লগ
+  es:
+    languageCode: es
+    languageName: Español
+    title: "Luz Graciela Torales Rodríguez"
     weight: 2
 # default language for the content
 defaultContentLanguage: en
@@ -70,7 +72,7 @@ params:
     favicon: /images/site/favicon.png
 
   # GitHub repo of your site
-  gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
+  gitRepo: https://github.com/Dkrxchelita13/LGTR.github.io
   # Default branch of your Git repo
   gitBranch: main
 
@@ -154,12 +156,12 @@ params:
         #   hideDeleted: false
 
     # Enable Analytics
-    analytics:
-      enabled: true
-      services:
+    #analytics:
+      #enabled: true
+      #services:
         # Google Analytics
-        google:
-          id: G-H4LBG7NDFZ
+        #google:
+         # id: G-H4LBG7NDFZ
         # # CounterDev
         # counterDev:
         #   id: <your counterdev id>
@@ -172,14 +174,15 @@ params:
         #   siteId: 1 # Or any other number
 
     # Enable Support
-    support:
-      enable: false
-      services:
-        kofi:
-          user: hossainemruz
-          text: Tip Me
-          textColor: '#f9fafc'
-          backgroundColor: '#248aaa'
+    
+    #support:
+     # enable: false
+      #services:
+       # kofi:
+        #  user: hossainemruz
+         # text: Tip Me
+          #textColor: '#f9fafc'
+          #backgroundColor: '#248aaa'
         # buymeacoffee:
         #   user: <your buymeacoffee.com user>
         #   text: Support me on Buy me a coffee!
