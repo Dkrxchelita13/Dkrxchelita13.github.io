@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-date: 2020-06-08T08:06:25+06:00
+date: 2025-02-08T08:06:25+06:00
 description: Introduction to Sample Post
 menu:
   sidebar:
@@ -11,8 +11,9 @@ tags: ["Basic", "Multi-lingual"]
 categories: ["Basic"]
 ---
 
-Greeting! This is an introduction post. This post tests the followings:
+Greeting! 
 
-- Hero image is in the same directory as the post.
-- This post should be at top of the sidebar.
-- Post author should be the same as specified in `author.yaml` file.
+I have experience working with HTML, CSS, JavaScript, Databases, PHP and Linux for web applications and networking security projects. My interests include ethical hacking, server administration, and secure web development. 
+I'm passionate about technology, cybersecurity, and innovation, always looking to expand my knowledge and work on challenging projects.
+
+Let's connect and collaborate!

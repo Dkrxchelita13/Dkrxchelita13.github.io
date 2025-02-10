@@ -8,54 +8,42 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Software Engineer
+designation: IT Student
 # your company information
 company:
-  name: Example Co.
-  url: "https://www.example.com"
+  name: Universidad Tecnológica del Centro de Veracruz (UTCV)
+  url: "http://www.utcv.edu.mx/"
 
 # your resume. this file path should be relative to you "static" directory
 # Dreprecated. Use resourceLinks instead.
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I am a passionate software engineer with x years of working experience. I built OSS tools for [Kubernetes](https://kubernetes.io/) using GO. My tools help people to deploy their workloads in Kubernetes. Sometimes, I work on some fun projects such as writing a theme, etc.'
+summary: 'Hi, I am Luz an IT student specializing in Digital Network Infraestructure and Cybersecurity. Im currently pursuing a TSU (Technical University Degree) in Digital Networks and Cybersecurity, where i focus on network administration, cybersecurity, linux-based systems, and web development. '
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
 - name: Email
   icon: "fas fa-envelope"
-  url: "example@gmail.com"
+  url: "luzgraciela13.colaborations@gmail.com"
 
 - name: Github
   icon: "fab fa-github"
-  url: "https://www.github.com/example"
-
-- name: Stackoverflow
-  icon: "fab fa-stack-overflow"
-  url: "#"
+  url: "https://github.com/Dkrxchelita13"
 
 - name: LinkedIn
   icon: "fab fa-linkedin"
-  url: "#"
+  url: "https://www.linkedin.com/in/luz-graciela-torales-rodr%C3%ADguez-a3a999283/"
 
 - name: Twitter
   icon: "fab fa-twitter"
-  url: "#"
+  url: "https://x.com/luzgraciela_13"
 
 - name: Facebook
   icon: "fab fa-facebook"
-  url: "#"
+  url: "https://www.facebook.com/share/12Mr8q8cE6c/?mibextid=wwXIfr"
 
-- name: Mastadon
-  icon: "fab fa-mastodon"
-  url: "#"
-  rel: "me noopener"
-
-- name: ResearchGate
-  icon: "fab fa-researchgate"
-  url: "https://www.researchgate.net/profile/john-doe"
 
 # You can put custom buttons to link your relevant resources.
 # For example, you can put link for your resume.
@@ -68,24 +56,51 @@ resourceLinks:
 # You can also show a circular bar indicating the level of expertise on a certain skill
 badges:
 - type: certification
-  name: Certified Kubernetes Security Specialist
-  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
-  badge: "https://images.credly.com/size/680x680/images/f4bf92ed-8985-40b2-bc07-2f9308780854/kubernetes-security-specialist-logo-examdev.png"
+  name: CCNA Introduction to Networks
+  url: "https://www.credly.com/badges/9406cbab-40b1-449f-906f-f1d6140f29e3"
+  badge: "https://images.credly.com/size/340x340/images/70d71df5-f3dc-4380-9b9d-f22513a70417/CCNAITN__1_.png"
 
 - type: certification
-  name: Istio and IBM Cloud Kubernetes Service
-  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
-  badge: "https://images.credly.com/size/680x680/images/8d34d489-84bf-4861-a4a0-9e9d68318c5c/Beyond_basics_of_Istio_on_Cloud_v2.png"
+  name: IT Essentials
+  url: "https://www.credly.com/badges/07c6e209-5fc2-465a-9651-48463e6df799"
+  badge: "https://images.credly.com/size/340x340/images/04e8034c-81f5-4f7f-ab23-e8b428c31ce9/ITE.png"
 
 - type: certification
-  name: Artificial Intelligence and Machine Learning
-  url: "https://www.credly.com/org/grupo-bancolombia/badge/artificial-intelligence-and-machine-learning"
-  badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
-
+  name: CCNA Enterprise Networking, Security, and Automation
+  url: "https://www.credly.com/badges/4ec75077-ff33-4ffa-a659-50651e7f060b"
+  badge: "https://images.credly.com/size/340x340/images/0a6d331e-8abf-4272-a949-33f754569a76/CCNAENSA__1_.png"
+- type: certification
+  name: CCNA Switching, Routing, and Wireless Essentials
+  url: "https://www.credly.com/badges/b9c4e2a7-5975-4698-915a-88388955bbfe"
+  badge: "https://images.credly.com/size/340x340/images/f4ccdba9-dd65-4349-baad-8f05df116443/CCNASRWE__1_.png"
+- type: certification
+  name: Google Cloud Computing Foundations Cloud Computing Fundamentals
+  url: "https://www.cloudskillsboost.google/public_profiles/06123087-af7c-4dd8-94c8-3bcb9daf766f/badges/8191744"
+  badge: "https://cdn.qwiklabs.com/dGJj9QGPM0XKy1XJZwIrl5HAzGkopR5n8J5Ex1HzNUs%3D"
+- type: certification
+  name: Google Cloud Computing Foundations Infrastructure in Google Cloud
+  url: "https://www.cloudskillsboost.google/public_profiles/06123087-af7c-4dd8-94c8-3bcb9daf766f/badges/8254845"
+  badge: "https://cdn.qwiklabs.com/hJUAG%2BgAxYxJ3Scj0ch7p3n3TWZA%2BHOMtMkX2F%2Fmt3Y%3D"
+  
+- type: certification
+  name: Google Cloud Computing Foundations Networking & Security in Google Cloud
+  url: "https://www.cloudskillsboost.google/public_profiles/06123087-af7c-4dd8-94c8-3bcb9daf766f/badges/8323275"
+  badge: "https://cdn.qwiklabs.com/pfbHZIL5bmVEy0ZFJn5bzkHpbUVefMti4xbbGoCOh9s%3D"
+  
+- type: certification
+  name: Google Cloud Computing Foundations Data, ML, and AI in Google Cloud
+  url: "https://www.cloudskillsboost.google/public_profiles/06123087-af7c-4dd8-94c8-3bcb9daf766f/badges/8403570"
+  badge: "https://cdn.qwiklabs.com/45NtwmcUV1eAXLyEXHZaryyB0botAfGO1yHrlkDcVOM%3D"
+  
+- type: certification
+  name: Google Cloud Essentials
+  url: "https://www.cloudskillsboost.google/public_profiles/06123087-af7c-4dd8-94c8-3bcb9daf766f/badges/8411809"
+  badge: "https://cdn.qwiklabs.com/xRejIPM4k6VgI8%2B%2B2Nz5bFHFx8PwK0nn9oQofkJOsS4%3D"
+  
 - type: soft-skill-indicator
   name: Leadership
   percentage: 85
-  color: blue
+  color: green
 
 - type: soft-skill-indicator
   name: Team Work

@@ -25,47 +25,46 @@ buttons:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: Kubernetes
+- name: PacketTracert
   logo: /images/sections/skills/kubernetes.png
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
+  summary: "I have experience using Cisco Packet Tracer for network design, configuration, and troubleshooting. I can simulate and analyze network topologies, configure routers, switches, VLANs, subnetting, and test network perfomance in virtual environments."
   categories: ["container"]
   url: "https://kubernetes.io/"
-
-- name: Go Development
-  logo: /images/sections/skills/go.png
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  categories: ["basic", "language"]
-  url: "https://golang.org/"
-
-- name: Cloud Computing
-  logo: /images/sections/skills/cloud.png
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
-  categories: ["others"]
-
-- name: Docker
-  logo: /images/sections/skills/docker.svg
-  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
+  
+- name: Postgresql
+  logo: /images/sections/skills/c++.png
+  summary: "I work with PostgreSQL, designing relational databases , writing queries, stored procedures, and optimizing database and performance. I understand normalization, indexing, and database security best practices."
   categories: ["container"]
+
+- name: MySql
+  logo: /images/sections/skills/c++.png
+  summary: "I use MySQL for database design, CRUD operations, stored procedures, and database security. I have knowledge in user authentication, database backups, and performance optimization."
+  categories: ["container"]
+
+- name: HTML5
+  logo: /images/sections/skills/docker.svg
+  summary: "I have strong knowledge of HTML5 creating well-structured and semantic web pages. I follow best practices for responsive design, accessibility, and optimization."
+  categories: ["language"]
   url: "https://www.docker.com/"
 
-- name: Prometheus
+- name: CSS
   logo: /images/sections/skills/prometheus.png
-  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
-  categories: ["basic"]
+  summary: "I design and style web applications using CSS, including Flexbox, Grid, animations, and media queries. Trying to ensure that designs are responsive, modern, and user-friendly."
+  categories: ["language", "basic"]
   url: "https://prometheus.io/"
 
-- name: Linux
+- name: Linux & System Administration
   logo: /images/sections/skills/linux.png
-  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
-  categories: ["others"]
+  summary: "I work with various Linux distributions, including Debian, Slackware, Zorin, and Ubuntu. I have experience configuring and managing network services such as DNS, HTTP, DB."
+  categories: ["basic", "others"]
 
-- name: Git
+- name: JavaScript
   logo: /images/sections/skills/git.png
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
-  categories: ["basic"]
+  summary: "I use JavaScript for interactive web development, including DOM manipulation, event handling, and asynchronous programming.I am familiar with AJAX, Fetch API, and integrating JavaScript with backend services."
+  categories: ["language", "basic"]
   url: "https://git-scm.com/"
 
-- name: C++
+- name: Python
   logo: /images/sections/skills/c++.png
-  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
+  summary: "I use Python for automation, scripting, and data processing. I am familiar with object-oriented programming (OOP), working with APIs, file handling, and basic cybersecurity automation scripts."
   categories: ["basic", "language"]

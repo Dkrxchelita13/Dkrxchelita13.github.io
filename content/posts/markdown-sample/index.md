@@ -1,172 +1,109 @@
 ---
-title: "Markdown Samples"
-date: 2020-06-08T08:06:25+06:00
+title: “Configuration and Implementation of a Switched LAN and Services Network under a Linux O.S. and Services under a Linux O.S. and Implementation of a Web Application”.
+date: 2025-02-08T08:06:25+06:00
 description: Markdown rendering samples
 menu:
   sidebar:
-    name: Markdown Sample
+    name: Configuration and Implementation of a Switched LAN and Services Network under a Linux O.S. and Services under a Linux O.S. and Implementation of a Web Application
     identifier: markdown
     weight: 30
 author:
-  name: Jessica Jonas
+  name: Luz Graciela Torales Rodríguez
   image: /images/author/jessica.png
 math: true
 ---
 
-This is a sample post intended to test the followings:
+The configuration and implementation of a switched LAN network and services under a Linux operating system, along with the implementation of a web application, and the 
+a Linux operating system, together with the implementation of a web application, 
+represents a fundamental task in the field of network administration and software development. 
+software development. In an increasingly connected world, local area networks (LANs) play a crucial role in the 
+(LAN) play a crucial role in enabling efficient and secure communication between devices within an organization. 
+between devices within an organization
+Linux, the operating system known for its stability, security and flexibility, has become a preferred choice for 
+Linux, the operating system known for its stability, security and flexibility, has become a preferred choice for network and server management. 
+Using Linux to configure and manage a LAN allows system administrators to take advantage of advanced tools and 
+system administrators to take advantage of advanced tools and services that 
+optimize network performance and security.
+In addition, deploying a web application in this environment not only 
+not only complements the network infrastructure, but also provides an accessible and scalable platform for the 
+accessible and scalable platform for delivering services to end users. 
+Web applications, accessible from any device with an Internet connection, are essential in the digital age. 
+Internet, are essential in today's digital age to deliver dynamic and interactive services. 
+interactive services.
 
-- A different post author.
-- Table of contents.
-- Markdown content rendering.
-- Math rendering.
-- Emoji rendering.
+In this context, this project focuses on the steps needed to establish a scalable switched LAN, configure the 
+a scalable switched LAN, configure essential services under a Linux operating system, and develop a web application that 
+Linux operating system, and develop a web application that integrates with this infrastructure. 
+Through this implementation, the project seeks to not only demonstrate the technical and practical 
+and practical capabilities of network management and web development, but also to highlight the advantages of using Linux. 
+the advantages of using Linux as a base platform for robust, functional and scalable IT services. 
+services as a base platform for robust, functional and scalable IT services.
+
 
 ---
-# Markdown Syntax Rendering
+# More about the project
 
-## Headings
+## 1.2 Problem Statement
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
-
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
-
-## Paragraph
-
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
-
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
-
-## Blockquotes
-
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
-
-#### Blockquote without attribution
-
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use *Markdown syntax* within a blockquote.
-
-#### Blockquote with attribution
-
-> Don't communicate by sharing memory, share memory by communicating.</p>
-> — <cite>Rob Pike[^1]</cite>
+Today, network infrastructure and web services are crucial elements for the efficient operation of any organization. 
+crucial to the efficient operation of any organization. LAN (Local Area Network) networks 
+(Local Area Network) allow the interconnection of various devices and services, 
+facilitating internal community and access to shared resources. However, many organizations face significant challenges in setting up LANs, 
+However, many organizations face significant challenges in the configuration, implementation and 
+implementation and maintenance of these networks, especially when it is required to meet specific structured cabling standards. 
+specific structured cabling standards and the implementation of advanced network protocols. 
+of advanced network protocols.
+In addition, the increasing demand for functional and secure web applications raises the need to configure 
+the need to configure robust servers that can handle critical services such as web, DNS, FTP, FTP, etc. 
+such as web, DNS, FTP and databases, all under reliable operating systems such as Linux or Unix. 
+operating systems such as Linux or Unix. The lack of a well-configured network infrastructure 
+and well-developed web applications can result in operational inefficiencies, security 
+operational inefficiencies, security issues and poor user experience.
+This project aims to address these challenges by configuring and 
+implementing a switched (physical) LAN network with internet outbound, complying with ANSI structured wiring 
+ANSI/EIA/TIA 568 A and B, 569 and 606-C structured cabling standards.  In addition, crucial protocols within the network such as EIGRP will be configured, 
+VLAN, VTP, DTP, STP AND NAT. To ensure the robustness and functionality of the services, a server will be 
+services, a server will be set up under a Linux/Unix distribution that will include web 
+will include web services, DNS, FTP and databases (MySQL). Finally, a web application will be 
+Finally, a web application will be developed using PHP, HTML, CSS AND JavaScript, which will 
+CRUD operations on a database server.
+The project will be implemented using simulation tools (Packet Tracer) and in a real physical environment. 
+and in a real physical environment, which will provide a complete and practical view of the challenges and solutions in the 
+the challenges and solutions in the configuration and maintenance of a LAN with associated services. 
+associated services
 
 
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
+## 1.3 General and Specific Objectives
 
-## Tables
+Develop and implement a switched LAN network infrastructure that complies with international 
+international standards for structured cabling and configuration of server services under a Linux/Unix 
+server services under a Linux/Unix distribution, integrating a functional web application to 
+web application that allows CRUD operations, guaranteeing an efficient, secure connectivity and 
+efficient, secure connectivity and internet access for all network devices. 
+network devices.
+## 1.4 Justification
+The configuration and implementation of a switched LAN network with services under a Linux operating system, along with the development of a web application, are 
+a Linux operating system, along with the development of a web application, are essential components in any 
+essential components in the technological infrastructure of any modern organization. 
+organization. The relevance and necessity of this project is based on several key aspects: The following are some of the key aspects 
+key aspects
 
-Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
+#### Configuration and Implementation of a Switched LAN Network and Services under a Linux O.S. and Implementation of a Web Application. Services under a Linux O.S. and Implementation of a Web Application.
 
-   | Name  | Age |
-   | ----- | --- |
-   | Bob   | 27  |
-   | Alice | 23  |
+> . The results show that, despite 
+show that, despite the limitations of the hardware, the implemented solution is effective and suitable for the business environment. 
+is effective and suitable for the business environment, although it is noted that more specific functions will require different, more powerful and therefore 
+more specific functions will require different, more powerful and therefore more expensive devices. 
+expensive. </p>
+> — <cite>Álvarez Torres (2019)[^1]</cite>
 
-#### Inline Markdown within tables
 
-| Inline&nbsp;&nbsp;&nbsp; | Markdown&nbsp;&nbsp;&nbsp; | In&nbsp;&nbsp;&nbsp;                | Table  |
-| ------------------------ | -------------------------- | ----------------------------------- | ------ |
-| *italics*                | **bold**                   | ~~strikethrough~~&nbsp;&nbsp;&nbsp; | `code` |
+####  Implementation of a GNU/Linux Network Service to Improve Network and Internet Service Access Management to Network and Internet Services for the Agencies in Rural Areas of the Rural Areas in the Alternative Edpyme Company.
 
-## Code Blocks
+> The tests conducted ensured that the configured network met the requirements and significantly improved the management of network resources, facilitating operability in difficult-to-access areas. difficult to access areas..</p>
+> — <cite>Poma Caso (2024)[^1]</cite>
 
-#### Code block with backticks
 
-```
-html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-```
-#### Code block indented with four spaces
-
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>Example HTML5 Document</title>
-    </head>
-    <body>
-      <p>Test</p>
-    </body>
-    </html>
-
-#### Code block with Hugo's internal highlight shortcode
-{{< highlight html >}}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-{{< /highlight >}}
-
-## List Types
-
-#### Ordered List
-
-1. First item
-2. Second item
-3. Third item
-
-#### Unordered List
-
-* List item
-* Another item
-* And another item
-
-#### Nested list
-
-* Fruit
-  * Apple
-  * Orange
-  * Banana
-* Dairy
-  * Milk
-  * Cheese
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
-
----
-
-## Math Rendering
-
-{{< math.inline >}}
-<p>
-Inline math: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)
-</p>
-{{</ math.inline >}}
-
-Block math:
-$$
- \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
-$$
 
 ---
 

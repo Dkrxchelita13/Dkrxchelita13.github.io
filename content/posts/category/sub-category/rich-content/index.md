@@ -1,6 +1,6 @@
 ---
-title: "Rich Content"
-date: 2020-06-08T08:06:25+06:00
+title: "Social Media"
+date: 2025-02-08T08:06:25+06:00
 description: Sample post with multiple images, embedded video etc.
 menu:
   sidebar:
@@ -29,18 +29,16 @@ This sample post tests the followings:
 
 {{< vs >}}
 
-### Tweet Sample
+### Tweet 
 
-{{< tweet user="SanDiegoZoo" id="1453110110599868418" >}}
-
-{{< vs >}}
-
-### YouTube Video Sample
-
-{{< youtube ZJthWmvUzzc >}}
+{{< tweet user="OldInternetFeel" id="1888345882300461383" >}}
 
 {{< vs >}}
 
-### Vimeo Video Sample
+### YouTube Video 
 
-{{< vimeo 48912912 >}}
+{{< youtube Q61y9KJf9m8 >}}
+
+{{< vs >}}
+
+
