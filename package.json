@@ -30,10 +30,9 @@
       "postcss-cli": "github.com/hugo-toha/toha/v4"
     }
   },
-  "dependencies": {},
   "devDependencies": {
     "@fontsource/mulish": "4.5.13",
-    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@fortawesome/fontawesome-free": "^6.7.2",
     "autoprefixer": "^10.4.20",
     "bootstrap": "^5.3.3",
     "eslint": "^8.31.0",
@@ -43,22 +42,38 @@
     "eslint-plugin-n": "^15.6.0",
     "eslint-plugin-no-jquery": "^2.7.0",
     "eslint-plugin-promise": "^6.1.1",
-    "feather-icons": "^4.29.1",
+    "feather-icons": "^4.29.2",
     "filterizr": "^2.2.4",
     "flag-icons": "^7.2.3",
     "fuse.js": "^6.6.2",
-    "highlight.js": "^11.6.0",
+    "highlight.js": "^11.11.1",
     "imagesloaded": "^5.0.0",
     "include-media": "^1.4.10",
     "ityped": "^1.0.3",
-    "katex": "^0.16.11",
+    "katex": "^0.16.21",
     "mark.js": "^8.11.1",
-    "mermaid": "^9.2.1",
-    "plyr": "^3.7.2",
+    "mermaid": "^9.4.3",
+    "plyr": "^3.7.8",
     "popper.js": "^1.16.1",
     "postcss": "^8.4.41",
     "postcss-cli": "^11.0.0"
   },
   "name": "hugo-toha.github.io",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/b1b93b02-f278-440b-ae1b-304e9f4c4ab5/deploy-status)](https://app.netlify.com/sites/toha/deploys) [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fhugo-toha%2Fhugo-toha.github.io%2Fbadge%3Fref%3Dmain&style=flat)](https://actions-badge.atrox.dev/hugo-toha/hugo-toha.github.io/goto?ref=main) ![Repository Size](https://img.shields.io/github/repo-size/hugo-toha/hugo-toha.github.io) ![Contributor](https://img.shields.io/github/contributors/hugo-toha/hugo-toha.github.io) ![Last Commit](https://img.shields.io/github/last-commit/hugo-toha/hugo-toha.github.io) ![License](https://img.shields.io/github/license/hugo-toha/hugo-toha.github.io) ![Open Issues](https://img.shields.io/github/issues/hugo-toha/hugo-toha.github.io?color=important) ![Open Pull Requests](https://img.shields.io/github/issues-pr/hugo-toha/hugo-toha.github.io?color=yellowgreen) ![Security Headers](https://img.shields.io/security-headers?url=https%3A%2F%2Fhugo-toha.github.io%2F) [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/b7cb60ab/hugo-toha.github.io)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dkrxchelita13/Dkrxchelita13.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dkrxchelita13/Dkrxchelita13.github.io/issues"
+  },
+  "homepage": "https://github.com/Dkrxchelita13/Dkrxchelita13.github.io#readme"
 }

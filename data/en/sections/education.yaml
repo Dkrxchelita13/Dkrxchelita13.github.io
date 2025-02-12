@@ -16,6 +16,9 @@ degrees:
   timeframe: 2023-2025
   institution:
     name: Universidad Tecnológica del Centro de Veracruz
+    url: "http://www.utcv.edu.mx/"
+    logo: /images/sections/education/utcv.png
+
   grade: #(optional)
     scale: GPA
     achieved: 4.0
@@ -27,7 +30,7 @@ degrees:
   institution:
     name: TryHackMe
     url: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-IXMNFLKPPZ.pdf"
-    logo: /images/sections/education/tech_college.png
+    logo: /images/sections/education/tryhackme.png
     # Can optionally show a different logo for dark theme
     # darkLogo: /images/sections/education/tech_college.png
   
@@ -37,7 +40,7 @@ degrees:
   institution:
     name: Universidad Tecnológica del Centro de Veracruz
     url: "https://www.netacad.com/es/courses/ccna-enterprise-networking-security-automation?courseLang=es-XL"
-    logo: /images/sections/education/university.jpg
+    logo: /images/sections/education/utcv.png
     # Can optionally show a different logo for dark theme
     # darkLogo: /images/sections/education/university.jpg
 
@@ -47,7 +50,7 @@ degrees:
   institution:
     name: Cisco Network Academy
     url: "https://www.netacad.com/es/courses/ccna-switching-routing-wireless-essentials?courseLang=es-XL"
-    logo: /images/sections/education/science_college.png
+    logo: /images/sections/education/cisco.png
     # Can optionally show a different logo for dark theme
     # darkLogo: /images/sections/education/science_college.png
 

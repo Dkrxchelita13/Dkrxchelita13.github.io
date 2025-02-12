@@ -26,32 +26,32 @@ buttons:
 # Give a summary of you each skill in the summary section.
 skills:
 - name: PacketTracert
-  logo: /images/sections/skills/kubernetes.png
+  logo: /images/sections/skills/pt.png
   summary: "I have experience using Cisco Packet Tracer for network design, configuration, and troubleshooting. I can simulate and analyze network topologies, configure routers, switches, VLANs, subnetting, and test network perfomance in virtual environments."
   categories: ["container"]
-  url: "https://kubernetes.io/"
+  url: "https://www.netacad.com/learning-collections/cisco-packet-tracer?courseLang=en-US"
   
 - name: Postgresql
-  logo: /images/sections/skills/c++.png
+  logo: /images/sections/skills/postgresql.png
   summary: "I work with PostgreSQL, designing relational databases , writing queries, stored procedures, and optimizing database and performance. I understand normalization, indexing, and database security best practices."
   categories: ["container"]
+  url: "https://www.postgresql.org/"
 
 - name: MySql
-  logo: /images/sections/skills/c++.png
+  logo: /images/sections/skills/mysql.png
   summary: "I use MySQL for database design, CRUD operations, stored procedures, and database security. I have knowledge in user authentication, database backups, and performance optimization."
   categories: ["container"]
+  url: "https://www.mysql.com/"
 
 - name: HTML5
-  logo: /images/sections/skills/docker.svg
+  logo: /images/sections/skills/html5.png
   summary: "I have strong knowledge of HTML5 creating well-structured and semantic web pages. I follow best practices for responsive design, accessibility, and optimization."
   categories: ["language"]
-  url: "https://www.docker.com/"
 
 - name: CSS
-  logo: /images/sections/skills/prometheus.png
+  logo: /images/sections/skills/css.png
   summary: "I design and style web applications using CSS, including Flexbox, Grid, animations, and media queries. Trying to ensure that designs are responsive, modern, and user-friendly."
   categories: ["language", "basic"]
-  url: "https://prometheus.io/"
 
 - name: Linux & System Administration
   logo: /images/sections/skills/linux.png
@@ -59,12 +59,12 @@ skills:
   categories: ["basic", "others"]
 
 - name: JavaScript
-  logo: /images/sections/skills/git.png
+  logo: /images/sections/skills/javascript.png
   summary: "I use JavaScript for interactive web development, including DOM manipulation, event handling, and asynchronous programming.I am familiar with AJAX, Fetch API, and integrating JavaScript with backend services."
   categories: ["language", "basic"]
-  url: "https://git-scm.com/"
 
 - name: Python
-  logo: /images/sections/skills/c++.png
+  logo: /images/sections/skills/python.png
   summary: "I use Python for automation, scripting, and data processing. I am familiar with object-oriented programming (OOP), working with APIs, file handling, and basic cybersecurity automation scripts."
   categories: ["basic", "language"]
+  url: "https://www.python.org/"

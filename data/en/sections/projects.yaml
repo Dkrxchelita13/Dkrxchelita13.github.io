@@ -17,7 +17,7 @@ buttons:
 # your projects
 projects:
 - name: WebPage NetProTec
-  logo: /images/sections/projects/kubernetes.png
+  logo: /images/sections/projects/github.png
   role: Contributor
   timeline: "March 2018 - Present"
   repo: https://github.com/Dkrxchelita13/NetProTecPage # If your project is a public repo on GitHub, then provide this link. it will show star count.

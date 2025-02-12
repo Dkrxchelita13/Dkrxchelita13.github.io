@@ -17,15 +17,16 @@ categories:
 - Basic
 ---
 
-This sample post tests the followings:
+🚀 Looking for someone with a passion for tech and the drive to make things happen? 🚀
 
-- Category, sub-category nesting in the sidebar.
-- Hero image and other images are in `images` folder inside this post directory.
-- Different media rendering like image, tweet, YouTube video, Vimeo video etc.
+I’m Luz, an IT student specializing in digital networks and cybersecurity. I love solving problems, optimizing systems, and creating solutions that actually work. If you need someone proactive, committed, and ready to take on challenges, I’m the right person for the job!
 
-### Image Sample
+📩 Connect with me on my social media and let’s talk about how I can add value to your team or project. I’m eager to learn, grow, and make an impact. Let’s build something great together! 💻✨
 
-{{< img src="/posts/category/sub-category/rich-content/images/forest.jpg" align="center" title="Forest">}}
+
+### Contact me
+
+[![Forest](/posts/category/sub-category/rich-content/images/facebook.jpg)](https://www.facebook.com/share/19pU71Xtpv/?mibextid=wwXIfr)
 
 {{< vs >}}
 
