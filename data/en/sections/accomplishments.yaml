@@ -11,36 +11,36 @@ section:
 
 # Your accomplishments
 accomplishments:
-- name: Linux Foundation System Administrator
-  timeline: "March 2018 - March 2019"
+- name: HTML Introduction
+  timeline: "August 2024"
   organization:
-    name: Linux Foundation
-    url: https://www.linuxfoundation.org
-  courseOverview: This course helps to understand the key concepts such as networking, storage, security, maintenance, logging and monitoring, application lifecycle, troubleshooting, API object primitives etc. It also help to grow the ability to establish basic use-cases for end users.
-  certificateURL: "https://example.com"
+    name: SoloLearn
+    url: https://www.sololearn.com/
+  courseOverview: "HTML is the core of every website. It's ideal for beginners, and knowing its basics is useful for anyone working in digital design, marketing, content and more. If you're interested in front-end web development, this course is a great place to start! You don't need any previous programming experience. Plus, once you're done, we have many other courses for you to deepen your knowledge, including CSS and JavaScipt."
+  certificateURL: "https://www.sololearn.com/certificates/CC-EZEYNW3A"
 
-- name: Machine Learning
-  timeline: "Jun 2020 - Jan 2021"
+- name: CSS Introduction
+  timeline: "August 2024"
   organization:
-    name: Coursera
-    url: https://www.coursera.org
-  courseOverview: "This course provides a broad introduction to machine learning, datamining, and statistical pattern recognition. Topics include: (i) Supervised learning (parametric/non-parametric algorithms, support vector machines, kernels, neural networks). (ii) Unsupervised learning (clustering, dimensionality reduction, recommender systems, deep learning). (iii) Best practices in machine learning (bias/variance theory; innovation process in machine learning and AI)."
-  certificateURL: "https://example.com"
+    name: SoloLearn
+    url: https://www.sololearn.com/
+  courseOverview: "Have you ever looked at a website and thought “wow, how pretty is that?”. Chances are a CSS genius was involved in its creation. If you're interested in visual design, CSS is the perfect language for you. CSS is also ideal for anyone interested in front-end web development. It is an essential tool for styling web content, and is used to define the visual appearance of the design and layout variations for different screen sizes and devices. CSS is a perfect ally for those learning HTML and JavaScript. It is easy to learn, so you will be able to create your own digital designs in no time."
+  certificateURL: "https://www.sololearn.com/certificates/CC-604DQQPY" 
 
-- name: Grokking the System Design Interview
-  timeline: "Jan 2018 - Sept 2018"
+- name: JavaScript Introduction
+  timeline: "August 2024"
   organization:
-    name: educative
-    url: https://www.educative.io
-  courseOverview: This course is a complete guide to master the SDIs. It is created by hiring managers who’ve been working at Google, Facebook, Microsoft, and Amazon. We've carefully chosen a set of questions that have not only been repeatedly asked at top companies, but also provide a thorough experience to handle any system design problem.
-  certificateURL: "https://example.com"
+    name: SoloLearn
+    url: https://www.sololearn.com/
+  courseOverview: "Have you ever wanted to make interactive websites, code fun mobile apps or work with artificial intelligence? JavaScript lets you do it all - no wonder it's one of the most popular programming languages out there. This course is perfect for beginners, no coding experience is necessary. By the end of this course, you will know the basics of how to use JavaScript to make an interactive website."
+  certificateURL: "https://www.sololearn.com/certificates/CC-VOGVXU8W"
 
-- name: Mastering Multithreading Programming with Go (Golang)
-  timeline: "Nov 2017 - Mar 2018"
+- name: JavaScript Intermediate
+  timeline: "August 2024"
   organization:
-    name: Udemy
-    url: https://www.udemy.com
-  courseOverview: Discover how to create responsive and high performance software. Develop programs with Golang that are highly Concurrent and Parallel. Improve your programming skills in Go with more advanced, multithreading topics.
-  certificateURL: "https://example.com"
+    name: SoloLearn
+    url: https://www.sololearn.com/
+  courseOverview: "Have you already mastered the basics of JavaScript and want to expand your knowledge? Then you're in the right place. This course will teach you how to make more complex and flexible programs and websites even more interactive. This course follows our Introduction to JavaScript course. We recommend that you take a quick look at what is covered there before starting this course."
+  certificateURL: "https://www.sololearn.com/certificates/CC-8QKRTK9K"
  
 

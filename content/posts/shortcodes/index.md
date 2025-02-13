@@ -20,18 +20,13 @@ The document is structured in several sections. It will start with a review of r
 ## APIS
 
 
-#### SENSOR PIR
+#### ARDUINO
 
-{{< img src="/posts/shortcodes/boat.jpg" height="400" width="600" align="center" title="A boat at the sea" >}}
-
-{{< vs 3 >}}
-
-#### DHT11
-
-{{< img src="/posts/shortcodes/boat.jpg" height="400" width="600" align="center" title="A boat at the sea" >}}
+{{< img src="/posts/shortcodes/arduino.png" height="400" width="600" align="center" title="A boat at the sea" >}}
 
 {{< vs 3 >}}
+
 
 ## Embedded PDF
 
-{{< embed-pdf src="/files/resume.pdf" >}}
+{{< embed-pdf src="/files/cven.pdf" >}}
