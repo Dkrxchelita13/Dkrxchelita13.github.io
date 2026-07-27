@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="{{ site.Language.Locale }}">
+<html lang="{{ site.Language.Lang }}" data-theme="dark">
 <head>
   {{ partial "head.html" . }}
 </head>
 <body>
   <a class="skip-link" href="#main-content">
-    {{ if eq site.Language.Name "es" }}Saltar al contenido{{ else }}Skip to content{{ end }}
+    {{ if eq site.Language.Lang "es" }}Saltar al contenido{{ else }}Skip to content{{ end }}
   </a>
 
   {{ partial "header.html" . }}
