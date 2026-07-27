@@ -1,0 +1,72 @@
+baseURL = "https://dkrxchelita13.github.io/"
+title = "Luz Graciela Torales Rodríguez"
+defaultContentLanguage = "es"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+enableEmoji = true
+summaryLength = 30
+
+[params]
+  author = "Luz Graciela Torales Rodríguez"
+  email = "luzgraciela13.colaborations@gmail.com"
+  github = "https://github.com/Dkrxchelita13"
+  linkedin = "https://www.linkedin.com/in/luz-graciela-torales-rodr%C3%ADguez-a3a999283/"
+  location = "Córdoba, Veracruz, México"
+  description = "Portafolio profesional de Luz Graciela Torales Rodríguez: ciberseguridad, redes, desarrollo backend y automatización."
+
+[languages]
+  [languages.es]
+    locale = "es-MX"
+    label = "Español"
+    title = "Luz Graciela Torales Rodríguez"
+    weight = 1
+    [languages.es.params]
+      shortName = "ES"
+      description = "Portafolio profesional de Luz Graciela Torales Rodríguez: ciberseguridad, redes, desarrollo backend y automatización."
+
+  [languages.en]
+    locale = "en-US"
+    label = "English"
+    title = "Luz Graciela Torales Rodríguez"
+    weight = 2
+    [languages.en.params]
+      shortName = "EN"
+      description = "Professional portfolio of Luz Graciela Torales Rodríguez: cybersecurity, networking, backend development, and automation."
+
+[[languages.es.menus.main]]
+  name = "Inicio"
+  pageRef = "/"
+  weight = 10
+
+[[languages.es.menus.main]]
+  name = "Proyectos"
+  pageRef = "/projects"
+  weight = 20
+
+[[languages.es.menus.main]]
+  name = "Contacto"
+  url = "/#contacto"
+  weight = 30
+
+[[languages.en.menus.main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 10
+
+[[languages.en.menus.main]]
+  name = "Projects"
+  pageRef = "/projects"
+  weight = 20
+
+[[languages.en.menus.main]]
+  name = "Contact"
+  url = "/en/#contact"
+  weight = 30
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[minify]
+  minifyOutput = true

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <a class="skip-link" href="#main-content">
+    {{ if eq site.Language.Name "es" }}Saltar al contenido{{ else }}Skip to content{{ end }}
+  </a>
+
+  {{ partial "header.html" . }}
+
+  <main id="main-content">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  {{ $script := resources.Get "js/main.js" | minify | fingerprint }}
+  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
+</body>
+</html>

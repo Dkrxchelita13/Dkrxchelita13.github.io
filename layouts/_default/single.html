@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <article class="section">
+    <div class="container narrow">
+      <p class="section-label">{{ upper .Section }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+      <div class="prose">
+        {{ .Content }}
+      </div>
+    </div>
+  </article>
+{{ end }}

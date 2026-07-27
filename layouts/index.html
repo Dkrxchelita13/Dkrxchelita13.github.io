@@ -1,0 +1,42 @@
+{{ define "main" }}
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">{{ .Params.eyebrow }}</p>
+        <h1>{{ .Params.hero_title }}</h1>
+        <p class="hero-subtitle">{{ .Params.hero_subtitle }}</p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="{{ "projects/" | relLangURL }}">{{ .Params.projects_button }}</a>
+          <a class="button button-secondary" href="mailto:{{ site.Params.email }}">{{ .Params.contact_button }}</a>
+        </div>
+
+        <p class="location">{{ site.Params.location }}</p>
+      </div>
+
+      <div class="hero-image-wrapper">
+        {{ with resources.Get "images/profile/luz-torales.png" }}
+          <img class="hero-image" src="{{ .RelPermalink }}" width="310" height="336" alt="Luz Graciela Torales Rodríguez">
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <p class="section-label">01</p>
+      <h2>{{ .Params.foundation_title }}</h2>
+      <p>{{ .Params.foundation_text }}</p>
+    </div>
+  </section>
+
+
+  <section id="{{ if eq site.Language.Name "es" }}contacto{{ else }}contact{{ end }}" class="section section-muted">
+    <div class="container narrow">
+      <p class="section-label">02</p>
+      <h2>{{ .Params.contact_title }}</h2>
+      <p>{{ .Params.contact_text }}</p>
+      <a class="text-link" href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>
+    </div>
+  </section>
+{{ end }}
