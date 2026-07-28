@@ -47,6 +47,101 @@ focus_areas:
       - "Paramiko"
       - "Cisco"
 
+profile_section_label: "PROFILE"
+profile_section_title: "An integrated technical profile with a human approach"
+profile_section_intro: "I combine information security, infrastructure, and backend development with leadership, assertive communication, and adaptability."
+profile_paragraphs:
+  - "I am currently pursuing a degree in Smart Networks and Cybersecurity Engineering. My academic and practical experience has enabled me to work with infrastructure administration, automation, vulnerability analysis, and backend service development."
+  - "I am recognized for analytical thinking, self-directed learning, and the ability to collaborate across multidisciplinary teams. I aim to contribute integrated, well-documented solutions that deliver value from the start."
+profile_strengths:
+  - title: "Analytical thinking"
+    text: "I break down technical problems, identify risks, and evaluate alternatives before implementation."
+  - title: "Adaptability"
+    text: "I learn new tools and adjust quickly to different technical and collaborative environments."
+  - title: "Communication and leadership"
+    text: "I explain technical decisions clearly and collaborate respectfully with different profiles."
+  - title: "Technical documentation"
+    text: "I document findings, processes, tests, and decisions to support continuity and knowledge sharing."
+profile_snapshot_title: "Current status"
+profile_snapshot:
+  - label: "Education"
+    value: "9th term of Engineering"
+  - label: "Expected graduation"
+    value: "Mid-2027"
+  - label: "Location"
+    value: "Córdoba, Veracruz, Mexico"
+  - label: "Availability"
+    value: "Internships and professional opportunities"
+
+experience_label: "EXPERIENCE"
+experience_title: "Hands-on experience in support, infrastructure, and security"
+experience_intro: "I have participated in technical support and cybersecurity activities, resolving incidents, assessing infrastructure, and documenting findings."
+experiences:
+  - company: "San Antonio"
+    role: "Technical Support"
+    mode: "On-site"
+    period: "April 2025 – July 2025"
+    bullets:
+      - "Provided on-site technical support for four months, resolving hardware and software incidents to support operational continuity for users."
+    tags:
+      - "Hardware"
+      - "Software"
+      - "User support"
+  - company: "LAVIS"
+    role: "Cybersecurity and Infrastructure Intern · A.A.S. Placement"
+    mode: "Remote"
+    period: "April 2025 – July 2025"
+    bullets:
+      - "Performed remote penetration testing on a server cluster, identifying vulnerabilities and opportunities to improve the infrastructure."
+      - "Documented findings and proposed mitigation measures to strengthen network security."
+    tags:
+      - "Pentesting"
+      - "Vulnerabilities"
+      - "Documentation"
+      - "Mitigation"
+
+education_label: "EDUCATION"
+education_title: "Academic background and continuous learning"
+education_intro: "My education combines networking fundamentals, systems administration, cybersecurity, software development, and artificial intelligence."
+education:
+  - degree: "B.S. in Smart Networks and Cybersecurity Engineering"
+    institution: "Universidad Tecnológica del Centro de Veracruz"
+    period: "In progress · Expected graduation in mid-2027"
+    details:
+      - "Currently completing the 9th term."
+      - "Coursework includes Ethical Hacking, Information Security Management, and Cloud Computing."
+  - degree: "A.A.S. in Digital Network Infrastructure"
+    institution: "Universidad Tecnológica del Centro de Veracruz"
+    period: "Completed"
+certifications_title: "Certifications and courses"
+certification_groups:
+  - title: "Cybersecurity and networking"
+    items:
+      - "Cisco Ethical Hacker"
+      - "CCNA: Enterprise Networking, Security, and Automation"
+      - "CCNA: Switching, Routing, and Wireless Essentials"
+      - "CCNA: Introduction to Networks"
+      - "IT Essentials"
+  - title: "Infrastructure and systems"
+    items:
+      - "Red Hat System Administration I · RH124/RHA, version 9.3"
+  - title: "Artificial intelligence and data"
+    items:
+      - "Preparatory Course for the Public AI Training Center · TecNM and Government of Mexico"
+      - "Machine Learning and Data Science bootcamps and courses"
+  - title: "Development"
+    items:
+      - "SoloLearn: JavaScript, HTML, and CSS"
+      - "Courses focused on software development and cloud computing"
+languages_title: "Languages"
+languages:
+  - name: "English"
+    level: "B2 · Intermediate"
+    evidence: "Cambridge Linguaskill"
+  - name: "Mandarin Chinese"
+    level: "HSK 2"
+    evidence: "Continuous learning"
+
 philosophy_label: "WORKING METHOD"
 philosophy_title: "Security and automation by design"
 philosophy_text: "I seek to understand the full problem before choosing a technology. I document decisions, test components, and consider security, user experience, and operational continuity from the start."

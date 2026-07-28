@@ -47,6 +47,101 @@ focus_areas:
       - "Paramiko"
       - "Cisco"
 
+profile_section_label: "PERFIL"
+profile_section_title: "Un perfil técnico integral, con enfoque humano"
+profile_section_intro: "Combino seguridad de la información, infraestructura y desarrollo backend con liderazgo, comunicación asertiva y capacidad de adaptación."
+profile_paragraphs:
+  - "Me encuentro en formación como Ingeniera en Redes Inteligentes y Ciberseguridad. Mi experiencia académica y práctica me ha permitido trabajar con administración de infraestructura, automatización, análisis de vulnerabilidades y construcción de servicios backend."
+  - "Me caracterizo por el pensamiento analítico, el aprendizaje autodidacta y la facilidad para colaborar en equipos multidisciplinarios. Busco aportar soluciones integrales, documentadas y orientadas a generar valor desde el inicio."
+profile_strengths:
+  - title: "Pensamiento analítico"
+    text: "Descompongo problemas técnicos, identifico riesgos y evalúo alternativas antes de implementar."
+  - title: "Adaptabilidad"
+    text: "Aprendo nuevas herramientas y me integro con rapidez a distintos entornos de trabajo."
+  - title: "Comunicación y liderazgo"
+    text: "Explico decisiones técnicas con claridad y colaboro de forma respetuosa con perfiles diversos."
+  - title: "Documentación técnica"
+    text: "Registro hallazgos, procesos, pruebas y decisiones para facilitar la continuidad del trabajo."
+profile_snapshot_title: "Actualmente"
+profile_snapshot:
+  - label: "Formación"
+    value: "9.º cuatrimestre de Ingeniería"
+  - label: "Graduación esperada"
+    value: "Mediados de 2027"
+  - label: "Ubicación"
+    value: "Córdoba, Veracruz, México"
+  - label: "Disponibilidad"
+    value: "Estadías y oportunidades profesionales"
+
+experience_label: "EXPERIENCIA"
+experience_title: "Experiencia práctica en soporte, infraestructura y seguridad"
+experience_intro: "He participado en actividades de soporte técnico y ciberseguridad, resolviendo incidencias, evaluando infraestructura y documentando hallazgos."
+experiences:
+  - company: "San Antonio"
+    role: "Soporte Técnico"
+    mode: "Presencial"
+    period: "Abril 2025 – julio 2025"
+    bullets:
+      - "Brindé soporte técnico presencial durante cuatro meses, resolviendo incidencias de hardware y software para contribuir a la continuidad operativa de los usuarios."
+    tags:
+      - "Hardware"
+      - "Software"
+      - "Soporte a usuarios"
+  - company: "LAVIS"
+    role: "Practicante de Ciberseguridad e Infraestructura · Estadías TSU"
+    mode: "Remoto"
+    period: "Abril 2025 – julio 2025"
+    bullets:
+      - "Ejecuté pruebas de penetración de manera remota sobre un clúster de servidores, identificando vulnerabilidades y áreas de mejora en la infraestructura."
+      - "Documenté los hallazgos y propuse medidas de mitigación para fortalecer la seguridad de la red."
+    tags:
+      - "Pentesting"
+      - "Vulnerabilidades"
+      - "Documentación"
+      - "Mitigación"
+
+education_label: "FORMACIÓN"
+education_title: "Formación académica y aprendizaje continuo"
+education_intro: "Mi preparación combina fundamentos de redes, administración de sistemas, ciberseguridad, desarrollo de software e inteligencia artificial."
+education:
+  - degree: "Ingeniería en Redes Inteligentes y Ciberseguridad"
+    institution: "Universidad Tecnológica del Centro de Veracruz"
+    period: "En curso · Graduación esperada a mediados de 2027"
+    details:
+      - "Actualmente cursando el 9.º cuatrimestre."
+      - "Formación en Hacking Ético, Gestión de la Seguridad Informática y Cómputo en la Nube."
+  - degree: "Técnico Superior Universitario en Infraestructura de Redes Digitales"
+    institution: "Universidad Tecnológica del Centro de Veracruz"
+    period: "Finalizado"
+certifications_title: "Certificaciones y cursos"
+certification_groups:
+  - title: "Ciberseguridad y redes"
+    items:
+      - "Cisco Ethical Hacker"
+      - "CCNA: Enterprise Networking, Security, and Automation"
+      - "CCNA: Switching, Routing, and Wireless Essentials"
+      - "CCNA: Introduction to Networks"
+      - "IT Essentials"
+  - title: "Infraestructura y sistemas"
+    items:
+      - "Red Hat System Administration I · RH124/RHA, versión 9.3"
+  - title: "Inteligencia artificial y datos"
+    items:
+      - "Curso Propedéutico del Centro Público de Formación en Inteligencia Artificial · TecNM y Gobierno de México"
+      - "Bootcamps y cursos de Machine Learning y Ciencia de Datos"
+  - title: "Desarrollo"
+    items:
+      - "SoloLearn: JavaScript, HTML y CSS"
+      - "Cursos orientados a desarrollo de software y cloud"
+languages_title: "Idiomas"
+languages:
+  - name: "Inglés"
+    level: "B2 · Intermedio"
+    evidence: "Cambridge Linguaskill"
+  - name: "Chino mandarín"
+    level: "HSK 2"
+    evidence: "En aprendizaje continuo"
+
 philosophy_label: "FORMA DE TRABAJO"
 philosophy_title: "Seguridad y automatización desde el diseño"
 philosophy_text: "Busco entender el problema completo antes de elegir una tecnología. Documento decisiones, pruebo los componentes y considero desde el inicio la seguridad, la experiencia de uso y la continuidad operativa."

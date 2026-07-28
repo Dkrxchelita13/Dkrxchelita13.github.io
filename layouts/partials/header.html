@@ -7,7 +7,7 @@
       <span class="brand-copy">
         <span class="brand-name">Luz Torales</span>
         <span class="brand-role">
-          {{ if eq site.Language.Lang "es" }}Cybersecurity & Backend{{ else }}Cybersecurity & Backend{{ end }}
+          {{ if eq site.Language.Name "es" }}Cybersecurity & Backend{{ else }}Cybersecurity & Backend{{ end }}
         </span>
       </span>
     </a>
@@ -15,7 +15,7 @@
     <div class="header-actions">
       <nav id="primary-navigation"
            class="primary-navigation"
-           aria-label="{{ if eq site.Language.Lang "es" }}Navegación principal{{ else }}Primary navigation{{ end }}">
+           aria-label="{{ if eq site.Language.Name "es" }}Navegación principal{{ else }}Primary navigation{{ end }}">
         <ul>
           {{ range site.Menus.main }}
             <li>
@@ -29,12 +29,12 @@
 
         {{ if gt (len .AllTranslations) 1 }}
           <div class="language-switcher"
-               aria-label="{{ if eq site.Language.Lang "es" }}Cambiar idioma{{ else }}Change language{{ end }}">
+               aria-label="{{ if eq site.Language.Name "es" }}Cambiar idioma{{ else }}Change language{{ end }}">
             {{ range .AllTranslations }}
               <a href="{{ .RelPermalink }}"
-                 lang="{{ .Language.Lang }}"
-                 hreflang="{{ .Language.LanguageCode }}"
-                 {{ if eq .Language.Lang site.Language.Lang }}aria-current="true"{{ end }}>
+                 lang="{{ .Language.Locale }}"
+                 hreflang="{{ .Language.Locale }}"
+                 {{ if eq .Language.Name site.Language.Name }}aria-current="true"{{ end }}>
                 {{ .Language.Params.shortName }}
               </a>
             {{ end }}
@@ -46,8 +46,8 @@
               type="button"
               aria-pressed="false"
               data-theme-toggle
-              data-light-label="{{ if eq site.Language.Lang "es" }}Activar tema claro{{ else }}Enable light theme{{ end }}"
-              data-dark-label="{{ if eq site.Language.Lang "es" }}Activar tema oscuro{{ else }}Enable dark theme{{ end }}">
+              data-light-label="{{ if eq site.Language.Name "es" }}Activar tema claro{{ else }}Enable light theme{{ end }}"
+              data-dark-label="{{ if eq site.Language.Name "es" }}Activar tema oscuro{{ else }}Enable dark theme{{ end }}">
         <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
           <circle cx="12" cy="12" r="4"></circle>
           <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
@@ -56,7 +56,7 @@
           <path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"></path>
         </svg>
         <span class="sr-only theme-label">
-          {{ if eq site.Language.Lang "es" }}Cambiar tema{{ else }}Change theme{{ end }}
+          {{ if eq site.Language.Name "es" }}Cambiar tema{{ else }}Change theme{{ end }}
         </span>
       </button>
 
@@ -64,9 +64,9 @@
               type="button"
               aria-expanded="false"
               aria-controls="primary-navigation"
-              aria-label="{{ if eq site.Language.Lang "es" }}Abrir navegación{{ else }}Open navigation{{ end }}"
-              data-open-label="{{ if eq site.Language.Lang "es" }}Abrir navegación{{ else }}Open navigation{{ end }}"
-              data-close-label="{{ if eq site.Language.Lang "es" }}Cerrar navegación{{ else }}Close navigation{{ end }}">
+              aria-label="{{ if eq site.Language.Name "es" }}Abrir navegación{{ else }}Open navigation{{ end }}"
+              data-open-label="{{ if eq site.Language.Name "es" }}Abrir navegación{{ else }}Open navigation{{ end }}"
+              data-close-label="{{ if eq site.Language.Name "es" }}Cerrar navegación{{ else }}Close navigation{{ end }}">
         <span class="nav-toggle-line" aria-hidden="true"></span>
         <span class="nav-toggle-line" aria-hidden="true"></span>
         <span class="nav-toggle-line" aria-hidden="true"></span>

@@ -18,7 +18,7 @@
               <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
               {{ with .Description }}<p>{{ . }}</p>{{ end }}
               <a class="text-link" href="{{ .RelPermalink }}">
-                {{ if eq site.Language.Lang "es" }}Ver proyecto{{ else }}View project{{ end }}
+                {{ if eq site.Language.Name "es" }}Ver proyecto{{ else }}View project{{ end }}
                 <span aria-hidden="true">→</span>
               </a>
             </article>
@@ -28,7 +28,7 @@
         <div class="empty-state reveal">
           <p>{{ .Params.empty_message }}</p>
           <a class="button button-secondary" href="{{ site.Home.RelPermalink }}">
-            {{ if eq site.Language.Lang "es" }}Volver al inicio{{ else }}Back home{{ end }}
+            {{ if eq site.Language.Name "es" }}Volver al inicio{{ else }}Back home{{ end }}
           </a>
         </div>
       {{ end }}

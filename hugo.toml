@@ -39,14 +39,24 @@ summaryLength = 30
   weight = 10
 
 [[languages.es.menus.main]]
+  name = "Perfil"
+  url = "/#perfil"
+  weight = 20
+
+[[languages.es.menus.main]]
+  name = "Experiencia"
+  url = "/#experiencia"
+  weight = 30
+
+[[languages.es.menus.main]]
   name = "Proyectos"
   pageRef = "/projects"
-  weight = 20
+  weight = 40
 
 [[languages.es.menus.main]]
   name = "Contacto"
   url = "/#contacto"
-  weight = 30
+  weight = 50
 
 [[languages.en.menus.main]]
   name = "Home"
@@ -54,14 +64,24 @@ summaryLength = 30
   weight = 10
 
 [[languages.en.menus.main]]
+  name = "Profile"
+  url = "/en/#profile"
+  weight = 20
+
+[[languages.en.menus.main]]
+  name = "Experience"
+  url = "/en/#experience"
+  weight = 30
+
+[[languages.en.menus.main]]
   name = "Projects"
   pageRef = "/projects"
-  weight = 20
+  weight = 40
 
 [[languages.en.menus.main]]
   name = "Contact"
   url = "/en/#contact"
-  weight = 30
+  weight = 50
 
 [markup]
   [markup.goldmark]

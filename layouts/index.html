@@ -21,7 +21,7 @@
         <p class="hero-subtitle">{{ .Params.hero_subtitle }}</p>
 
         {{ with .Params.hero_technologies }}
-          <ul class="technology-list" aria-label="{{ if eq site.Language.Lang "es" }}Tecnologías principales{{ else }}Core technologies{{ end }}">
+          <ul class="technology-list" aria-label="{{ if eq site.Language.Name "es" }}Tecnologías principales{{ else }}Core technologies{{ end }}">
             {{ range . }}
               <li>{{ . }}</li>
             {{ end }}
@@ -105,7 +105,9 @@
       </div>
     </div>
 
-    <a class="scroll-cue" href="#enfoque" aria-label="{{ .Params.scroll_label }}">
+    <a class="scroll-cue"
+       href="#{{ if eq site.Language.Name "es" }}enfoque{{ else }}focus{{ end }}"
+       aria-label="{{ .Params.scroll_label }}">
       <span>{{ .Params.scroll_text }}</span>
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path d="m6 9 6 6 6-6"></path>
@@ -113,7 +115,8 @@
     </a>
   </section>
 
-  <section id="enfoque" class="section focus-section">
+  <section id="{{ if eq site.Language.Name "es" }}enfoque{{ else }}focus{{ end }}"
+           class="section focus-section">
     <div class="container">
       <div class="section-heading reveal">
         <div>
@@ -161,6 +164,180 @@
     </div>
   </section>
 
+  <section id="{{ if eq site.Language.Name "es" }}perfil{{ else }}profile{{ end }}"
+           class="section profile-section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-label">02 / {{ .Params.profile_section_label }}</p>
+          <h2>{{ .Params.profile_section_title }}</h2>
+        </div>
+        <p>{{ .Params.profile_section_intro }}</p>
+      </div>
+
+      <div class="professional-profile-grid">
+        <div class="profile-narrative reveal">
+          {{ range .Params.profile_paragraphs }}
+            <p>{{ . }}</p>
+          {{ end }}
+
+          <div class="strength-grid">
+            {{ range .Params.profile_strengths }}
+              <article class="strength-card">
+                <span class="strength-indicator" aria-hidden="true"></span>
+                <h3>{{ .title }}</h3>
+                <p>{{ .text }}</p>
+              </article>
+            {{ end }}
+          </div>
+        </div>
+
+        <aside class="snapshot-card reveal" aria-labelledby="snapshot-title">
+          <div class="snapshot-header">
+            <div class="snapshot-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3v3M5.6 5.6l2.1 2.1M3 12h3M18 12h3M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"></path>
+                <circle cx="12" cy="12" r="4"></circle>
+              </svg>
+            </div>
+            <div>
+              <p class="snapshot-kicker">status.json</p>
+              <h3 id="snapshot-title">{{ .Params.profile_snapshot_title }}</h3>
+            </div>
+          </div>
+
+          <dl class="snapshot-list">
+            {{ range .Params.profile_snapshot }}
+              <div>
+                <dt>{{ .label }}</dt>
+                <dd>{{ .value }}</dd>
+              </div>
+            {{ end }}
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="{{ if eq site.Language.Name "es" }}experiencia{{ else }}experience{{ end }}"
+           class="section experience-section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-label">03 / {{ .Params.experience_label }}</p>
+          <h2>{{ .Params.experience_title }}</h2>
+        </div>
+        <p>{{ .Params.experience_intro }}</p>
+      </div>
+
+      <div class="experience-timeline">
+        {{ range .Params.experiences }}
+          <article class="timeline-item reveal">
+            <div class="timeline-rail" aria-hidden="true">
+              <span class="timeline-dot"></span>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <p class="timeline-company">{{ .company }}</p>
+                  <h3>{{ .role }}</h3>
+                </div>
+                <div class="timeline-meta">
+                  <span>{{ .period }}</span>
+                  <span>{{ .mode }}</span>
+                </div>
+              </div>
+
+              <ul class="timeline-bullets">
+                {{ range .bullets }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+
+              <ul class="tag-list">
+                {{ range .tags }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section id="{{ if eq site.Language.Name "es" }}formacion{{ else }}education{{ end }}"
+           class="section education-section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-label">04 / {{ .Params.education_label }}</p>
+          <h2>{{ .Params.education_title }}</h2>
+        </div>
+        <p>{{ .Params.education_intro }}</p>
+      </div>
+
+      <div class="education-grid">
+        {{ range .Params.education }}
+          <article class="education-card reveal">
+            <div class="education-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="m3 10 9-5 9 5-9 5-9-5Z"></path>
+                <path d="M7 12.5V17c3 2 7 2 10 0v-4.5M21 10v6"></path>
+              </svg>
+            </div>
+            <p class="education-period">{{ .period }}</p>
+            <h3>{{ .degree }}</h3>
+            <p class="education-institution">{{ .institution }}</p>
+            <ul class="education-details">
+              {{ range .details }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          </article>
+        {{ end }}
+      </div>
+
+      <div class="credentials-block">
+        <div class="subsection-heading reveal">
+          <p class="section-label">{{ .Params.certifications_title }}</p>
+        </div>
+
+        <div class="credential-grid">
+          {{ range .Params.certification_groups }}
+            <article class="credential-card reveal">
+              <h3>{{ .title }}</h3>
+              <ul>
+                {{ range .items }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            </article>
+          {{ end }}
+        </div>
+      </div>
+
+      <div class="languages-block">
+        <div class="subsection-heading reveal">
+          <p class="section-label">{{ .Params.languages_title }}</p>
+        </div>
+
+        <div class="language-grid">
+          {{ range .Params.languages }}
+            <article class="language-card reveal">
+              <div>
+                <h3>{{ .name }}</h3>
+                <p>{{ .evidence }}</p>
+              </div>
+              <span>{{ .level }}</span>
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section philosophy-section">
     <div class="container philosophy-grid">
       <div class="philosophy-code reveal" aria-hidden="true">
@@ -173,7 +350,7 @@
       </div>
 
       <div class="philosophy-copy reveal">
-        <p class="section-label">02 / {{ .Params.philosophy_label }}</p>
+        <p class="section-label">05 / {{ .Params.philosophy_label }}</p>
         <h2>{{ .Params.philosophy_title }}</h2>
         <p>{{ .Params.philosophy_text }}</p>
         <a class="text-link" href="{{ "projects/" | relLangURL }}">
@@ -186,12 +363,12 @@
     </div>
   </section>
 
-  <section id="{{ if eq site.Language.Lang "es" }}contacto{{ else }}contact{{ end }}"
+  <section id="{{ if eq site.Language.Name "es" }}contacto{{ else }}contact{{ end }}"
            class="section contact-section">
     <div class="container">
       <div class="contact-card reveal">
         <div>
-          <p class="section-label">03 / {{ .Params.contact_label }}</p>
+          <p class="section-label">06 / {{ .Params.contact_label }}</p>
           <h2>{{ .Params.contact_title }}</h2>
           <p>{{ .Params.contact_text }}</p>
         </div>
