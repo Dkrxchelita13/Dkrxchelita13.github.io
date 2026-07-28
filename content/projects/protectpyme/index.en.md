@@ -1,6 +1,8 @@
 ---
 title: "ProtectPYME"
 description: "A cybersecurity training platform for SMEs using a 2D game, gamification, and adaptive artificial intelligence."
+og_image: "images/og/protectpyme.png"
+og_image_alt: "ProtectPYME: AI-powered cybersecurity training platform"
 translationKey: "protectpyme"
 weight: 10
 featured: true

@@ -1,9 +1,13 @@
 baseURL = "https://dkrxchelita13.github.io/"
 title = "Luz Graciela Torales Rodríguez"
+copyright = "Luz Graciela Torales Rodríguez"
 defaultContentLanguage = "es"
 defaultContentLanguageInSubdir = false
+disableDefaultSiteRedirect = true
 enableRobotsTXT = true
 enableEmoji = true
+disableHugoGeneratorInject = true
+disableKinds = ["taxonomy", "term"]
 summaryLength = 30
 
 [params]
@@ -13,6 +17,20 @@ summaryLength = 30
   linkedin = "https://www.linkedin.com/in/luz-graciela-torales-rodr%C3%ADguez-a3a999283/"
   location = "Córdoba, Veracruz, México"
   description = "Portafolio profesional de Luz Graciela Torales Rodríguez: ciberseguridad, redes, desarrollo backend y automatización."
+  ogImage = "images/og/default.png"
+  keywords = [
+    "ciberseguridad",
+    "automatización de redes",
+    "desarrollo backend",
+    "FastAPI",
+    "Python",
+    "Linux",
+    "Docker",
+    "Docker Compose",
+    "PostgreSQL",
+    "Netmiko",
+    "Paramiko"
+  ]
 
 [languages]
   [languages.es]
@@ -100,3 +118,8 @@ summaryLength = 30
 
 [minify]
   minifyOutput = true
+
+[sitemap]
+  changeFreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5

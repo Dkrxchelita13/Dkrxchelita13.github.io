@@ -1,6 +1,8 @@
 ---
 title: "ProtectPYME"
 description: "Plataforma de capacitación en ciberseguridad para PYMES mediante un videojuego 2D, gamificación e inteligencia artificial adaptativa."
+og_image: "images/og/protectpyme.png"
+og_image_alt: "ProtectPYME: plataforma de capacitación en ciberseguridad con IA"
 translationKey: "protectpyme"
 weight: 10
 featured: true

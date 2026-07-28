@@ -1,0 +1,14 @@
+services:
+  portfolio:
+    build:
+      context: .
+      args:
+        HUGO_VERSION: "0.164.0"
+    image: luz-torales-portfolio:local
+    container_name: luz-torales-portfolio
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    init: true
+    security_opt:
+      - no-new-privileges:true

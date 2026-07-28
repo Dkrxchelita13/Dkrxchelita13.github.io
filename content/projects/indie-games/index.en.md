@@ -1,6 +1,8 @@
 ---
 title: "Indie game development"
 description: "2D minigames developed as personal practice to strengthen logic, object-oriented programming, and interaction design."
+og_image: "images/og/indie-games.png"
+og_image_alt: "Indie game development and 2D minigames"
 translationKey: "indie-games"
 weight: 30
 featured: false

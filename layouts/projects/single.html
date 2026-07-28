@@ -9,7 +9,7 @@
         <div class="project-detail-copy reveal">
           <a class="project-back-link" href="{{ "projects/" | relLangURL }}">
             <span aria-hidden="true">←</span>
-            {{ if eq site.Language.Lang "es" }}Todos los proyectos{{ else }}All projects{{ end }}
+            {{ if eq site.Language.Name "es" }}Todos los proyectos{{ else }}All projects{{ end }}
           </a>
 
           <div class="project-detail-badges">
@@ -29,7 +29,7 @@
             {{ end }}
             {{ with .Params.live_url }}
               <a class="button button-secondary" href="{{ . }}" target="_blank" rel="noopener noreferrer">
-                {{ if eq site.Language.Lang "es" }}Ver demostración{{ else }}View demo{{ end }}
+                {{ if eq site.Language.Name "es" }}Ver demostración{{ else }}View demo{{ end }}
               </a>
             {{ end }}
           </div>
@@ -44,26 +44,27 @@
             <img src="{{ .RelPermalink }}"
                  width="1200"
                  height="675"
-                 alt="{{ $.Params.cover_alt }}">
+                 alt="{{ $.Params.cover_alt }}"
+                 decoding="async">
           {{ end }}
         </div>
       </div>
 
       <div class="container project-facts reveal">
         <div>
-          <span>{{ if eq site.Language.Lang "es" }}Rol{{ else }}Role{{ end }}</span>
+          <span>{{ if eq site.Language.Name "es" }}Rol{{ else }}Role{{ end }}</span>
           <strong>{{ .Params.role }}</strong>
         </div>
         <div>
-          <span>{{ if eq site.Language.Lang "es" }}Periodo{{ else }}Period{{ end }}</span>
+          <span>{{ if eq site.Language.Name "es" }}Periodo{{ else }}Period{{ end }}</span>
           <strong>{{ .Params.period }}</strong>
         </div>
         <div>
-          <span>{{ if eq site.Language.Lang "es" }}Enfoque{{ else }}Focus{{ end }}</span>
+          <span>{{ if eq site.Language.Name "es" }}Enfoque{{ else }}Focus{{ end }}</span>
           <strong>{{ .Params.focus }}</strong>
         </div>
         <div>
-          <span>{{ if eq site.Language.Lang "es" }}Tipo{{ else }}Type{{ end }}</span>
+          <span>{{ if eq site.Language.Name "es" }}Tipo{{ else }}Type{{ end }}</span>
           <strong>{{ .Params.project_type }}</strong>
         </div>
       </div>
@@ -86,7 +87,7 @@
           </section>
 
           <section class="project-sidebar-card">
-            <p class="project-sidebar-label">{{ if eq site.Language.Lang "es" }}RESPONSABILIDADES{{ else }}RESPONSIBILITIES{{ end }}</p>
+            <p class="project-sidebar-label">{{ if eq site.Language.Name "es" }}RESPONSABILIDADES{{ else }}RESPONSIBILITIES{{ end }}</p>
             <ul class="project-sidebar-list">
               {{ range .Params.responsibilities }}
                 <li>{{ . }}</li>
@@ -96,7 +97,7 @@
 
           {{ with .Params.key_outputs }}
             <section class="project-sidebar-card">
-              <p class="project-sidebar-label">{{ if eq site.Language.Lang "es" }}ENTREGABLES{{ else }}KEY OUTPUTS{{ end }}</p>
+              <p class="project-sidebar-label">{{ if eq site.Language.Name "es" }}ENTREGABLES{{ else }}KEY OUTPUTS{{ end }}</p>
               <ul class="project-sidebar-list">
                 {{ range . }}
                   <li>{{ . }}</li>
@@ -112,7 +113,7 @@
       <section class="section project-gallery-section">
         <div class="container">
           <div class="subsection-heading reveal">
-            <p class="section-label">{{ if eq site.Language.Lang "es" }}EVIDENCIAS VISUALES{{ else }}VISUAL EVIDENCE{{ end }}</p>
+            <p class="section-label">{{ if eq site.Language.Name "es" }}EVIDENCIAS VISUALES{{ else }}VISUAL EVIDENCE{{ end }}</p>
           </div>
           <div class="project-gallery">
             {{ range . }}
@@ -120,7 +121,7 @@
               {{ $image := resources.Get $item.src }}
               {{ with $image }}
                 <figure class="reveal">
-                  <img src="{{ .RelPermalink }}" alt="{{ $item.alt }}" loading="lazy">
+                  <img src="{{ .RelPermalink }}" alt="{{ $item.alt }}" loading="lazy" decoding="async">
                   <figcaption>{{ $item.caption }}</figcaption>
                 </figure>
               {{ end }}
@@ -134,12 +135,12 @@
       <div class="container">
         <div class="contact-card reveal">
           <div>
-            <p class="section-label">{{ if eq site.Language.Lang "es" }}SIGUIENTE PASO{{ else }}NEXT STEP{{ end }}</p>
-            <h2>{{ if eq site.Language.Lang "es" }}¿Este proyecto se relaciona con tu equipo o vacante?{{ else }}Does this project relate to your team or open role?{{ end }}</h2>
-            <p>{{ if eq site.Language.Lang "es" }}Puedo explicar las decisiones técnicas, pruebas, documentación y aprendizajes detrás de la implementación.{{ else }}I can explain the technical decisions, tests, documentation, and lessons behind the implementation.{{ end }}</p>
+            <p class="section-label">{{ if eq site.Language.Name "es" }}SIGUIENTE PASO{{ else }}NEXT STEP{{ end }}</p>
+            <h2>{{ if eq site.Language.Name "es" }}¿Este proyecto se relaciona con tu equipo o vacante?{{ else }}Does this project relate to your team or open role?{{ end }}</h2>
+            <p>{{ if eq site.Language.Name "es" }}Puedo explicar las decisiones técnicas, pruebas, documentación y aprendizajes detrás de la implementación.{{ else }}I can explain the technical decisions, tests, documentation, and lessons behind the implementation.{{ end }}</p>
           </div>
           <a class="button button-primary" href="mailto:{{ site.Params.email }}">
-            {{ if eq site.Language.Lang "es" }}Contactarme{{ else }}Contact me{{ end }}
+            {{ if eq site.Language.Name "es" }}Contactarme{{ else }}Contact me{{ end }}
           </a>
         </div>
       </div>

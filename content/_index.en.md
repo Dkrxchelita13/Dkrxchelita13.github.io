@@ -1,6 +1,8 @@
 ---
 title: "Home"
 description: "Professional portfolio of Luz Graciela Torales Rodríguez: cybersecurity, network automation, infrastructure, and backend development."
+og_image: "images/og/default.png"
+og_image_alt: "Professional portfolio of Luz Graciela Torales Rodríguez"
 availability: "Available for professional internships in 2027"
 eyebrow: "Cybersecurity · Networking · Backend · Automation"
 hero_title: "I design and develop"
@@ -208,16 +210,16 @@ skills:
       - "Godot"
       - "Technical documentation"
 resume_title: "CV and résumé ready to download"
-resume_text: "Public 2-page versions designed for ATS compatibility and aligned with the portfolio visual identity. They omit my exact address and phone number."
+resume_text: "The public versions omit my exact address and phone number. They include only my city, professional email, and professional links."
 resume_files:
   - language: "English"
     name: "Professional résumé"
-    meta: "PDF · 2 pages · ATS"
+    meta: "PDF · 3 pages"
     path: "files/Luz_Graciela_Torales_Resume_EN.pdf"
     button: "Download résumé"
   - language: "Español"
     name: "Currículum profesional"
-    meta: "PDF · 2 páginas · ATS"
+    meta: "PDF · 4 páginas"
     path: "files/CV_Luz_Graciela_Torales_ES.pdf"
     button: "Descargar CV"
 

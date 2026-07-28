@@ -1,6 +1,8 @@
 ---
 title: "NetAdmin API"
 description: "API REST para inventario, escaneo, monitoreo y administración remota de dispositivos de red."
+og_image: "images/og/netadmin-api.png"
+og_image_alt: "NetAdmin API: automatización, inventario y administración de redes"
 translationKey: "netadmin-api"
 weight: 20
 featured: true

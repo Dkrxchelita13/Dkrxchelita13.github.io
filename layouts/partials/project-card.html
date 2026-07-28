@@ -1,13 +1,14 @@
 {{- $project := . -}}
 {{- $cover := resources.Get $project.Params.cover -}}
 <article class="portfolio-project-card reveal">
-  <a class="project-cover" href="{{ $project.RelPermalink }}" aria-label="{{ if eq site.Language.Lang "es" }}Abrir proyecto{{ else }}Open project{{ end }}: {{ $project.Title }}">
+  <a class="project-cover" href="{{ $project.RelPermalink }}" aria-label="{{ if eq site.Language.Name "es" }}Abrir proyecto{{ else }}Open project{{ end }}: {{ $project.Title }}">
     {{ with $cover }}
       <img src="{{ .RelPermalink }}"
            width="1200"
            height="675"
            alt="{{ $project.Params.cover_alt }}"
-           loading="lazy">
+           loading="lazy"
+           decoding="async">
     {{ end }}
     <span class="project-status">{{ $project.Params.status }}</span>
   </a>
@@ -31,7 +32,7 @@
     {{ end }}
 
     {{ with $project.Params.stack }}
-      <ul class="tag-list project-stack-preview" aria-label="{{ if eq site.Language.Lang "es" }}Tecnologías{{ else }}Technologies{{ end }}">
+      <ul class="tag-list project-stack-preview" aria-label="{{ if eq site.Language.Name "es" }}Tecnologías{{ else }}Technologies{{ end }}">
         {{ range first 6 . }}
           <li>{{ . }}</li>
         {{ end }}
@@ -39,7 +40,7 @@
     {{ end }}
 
     <a class="text-link project-card-link" href="{{ $project.RelPermalink }}">
-      {{ if eq site.Language.Lang "es" }}Ver caso completo{{ else }}View full case study{{ end }}
+      {{ if eq site.Language.Name "es" }}Ver caso completo{{ else }}View full case study{{ end }}
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path d="m5 12 14 0M13 6l6 6-6 6"></path>
       </svg>

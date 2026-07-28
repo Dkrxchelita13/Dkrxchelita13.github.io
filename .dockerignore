@@ -1,0 +1,11 @@
+.git
+.github
+.vscode
+.idea
+public
+resources/_gen
+.hugo_build.lock
+*.log
+*.zip
+.env
+.env.*

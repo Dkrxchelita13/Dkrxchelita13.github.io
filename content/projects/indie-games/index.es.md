@@ -1,6 +1,8 @@
 ---
 title: "Desarrollo de videojuegos indie"
 description: "Minijuegos 2D desarrollados como práctica personal para fortalecer lógica, programación orientada a objetos y diseño de interacciones."
+og_image: "images/og/indie-games.png"
+og_image_alt: "Desarrollo de videojuegos indie y minijuegos 2D"
 translationKey: "indie-games"
 weight: 30
 featured: false

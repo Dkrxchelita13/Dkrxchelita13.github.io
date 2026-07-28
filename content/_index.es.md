@@ -1,6 +1,8 @@
 ---
 title: "Inicio"
 description: "Portafolio profesional de Luz Graciela Torales Rodríguez: ciberseguridad, automatización de redes, infraestructura y desarrollo backend."
+og_image: "images/og/default.png"
+og_image_alt: "Portafolio profesional de Luz Graciela Torales Rodríguez"
 availability: "Disponible para estadías profesionales en 2027"
 eyebrow: "Ciberseguridad · Redes · Backend · Automatización"
 hero_title: "Diseño y desarrollo soluciones"
@@ -208,16 +210,16 @@ skills:
       - "Godot"
       - "Documentación técnica"
 resume_title: "CV y résumé listos para descargar"
-resume_text: "Versiones públicas de 2 páginas, compatibles con ATS y alineadas con el diseño del portafolio. Omiten domicilio exacto y teléfono."
+resume_text: "Las versiones públicas omiten domicilio exacto y teléfono. Incluyen únicamente ciudad, correo y enlaces profesionales."
 resume_files:
   - language: "Español"
     name: "Currículum profesional"
-    meta: "PDF · 2 páginas · ATS"
+    meta: "PDF · 4 páginas"
     path: "files/CV_Luz_Graciela_Torales_ES.pdf"
     button: "Descargar CV"
   - language: "English"
     name: "Professional résumé"
-    meta: "PDF · 2 pages · ATS"
+    meta: "PDF · 3 pages"
     path: "files/Luz_Graciela_Torales_Resume_EN.pdf"
     button: "Download résumé"
 
