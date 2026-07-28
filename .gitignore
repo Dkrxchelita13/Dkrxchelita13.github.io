@@ -18,3 +18,11 @@ Thumbs.db
 # Local environment files
 .env
 .env.*
+
+if (-not (Select-String -Path .\.gitignore -Pattern '^__pycache__/$' -Quiet)) {
+    Add-Content .\.gitignore "`n__pycache__/"
+}
+
+if (-not (Select-String -Path .\.gitignore -Pattern '^\*\.py\[cod\]$' -Quiet)) {
+    Add-Content .\.gitignore "*.py[cod]"
+}
