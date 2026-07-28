@@ -2770,3 +2770,387 @@ html[data-theme="light"] .project-status {
     transition: none;
   }
 }
+
+
+/* Parte 6: skills, downloadable resumes, and professional contact */
+.button-ghost {
+  border-color: transparent;
+  background: transparent;
+  color: var(--text-muted);
+}
+
+.button-ghost:hover,
+.button-ghost:focus-visible {
+  border-color: var(--border);
+  background: var(--surface);
+  color: var(--text-strong);
+}
+
+.skills-section {
+  position: relative;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.skill-card {
+  position: relative;
+  min-height: 280px;
+  padding: 1.35rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(145deg, var(--surface), var(--surface-solid));
+  box-shadow: var(--shadow-soft);
+  transition:
+    border-color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.skill-card::after {
+  position: absolute;
+  right: -4rem;
+  bottom: -5rem;
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  content: "";
+  opacity: 0.45;
+}
+
+.skill-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow);
+  transform: translateY(-4px);
+}
+
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.skill-number {
+  color: var(--accent);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.skill-node {
+  position: relative;
+  width: 0.65rem;
+  height: 0.65rem;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.35rem var(--accent-soft);
+}
+
+.skill-card h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: var(--text-strong);
+  font-size: 1.2rem;
+}
+
+.skill-card > p {
+  position: relative;
+  z-index: 1;
+  margin: 0.75rem 0 1.15rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.skill-tags {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-tags li {
+  padding: 0.34rem 0.58rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-muted);
+  color: var(--text);
+  font-size: 0.72rem;
+  font-weight: 750;
+}
+
+.resume-panel {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.7fr) minmax(0, 1.3fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 10% 10%, var(--accent-soft), transparent 18rem),
+    radial-gradient(circle at 95% 80%, var(--secondary-soft), transparent 18rem),
+    var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.resume-copy h3 {
+  margin: 0.5rem 0 0.8rem;
+  color: var(--text-strong);
+  font-size: clamp(1.55rem, 3vw, 2.15rem);
+}
+
+.resume-copy > p:last-child {
+  margin-bottom: 0;
+  color: var(--text-muted);
+}
+
+.resume-download-grid {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.resume-file-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface-solid);
+}
+
+.resume-file-icon {
+  display: grid;
+  width: 2.8rem;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid var(--border-strong);
+  border-radius: 0.8rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.resume-file-icon svg {
+  width: 1.25rem;
+}
+
+.resume-file-copy span {
+  color: var(--accent);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.resume-file-copy h4 {
+  margin: 0.15rem 0;
+  color: var(--text-strong);
+  font-size: 0.98rem;
+}
+
+.resume-file-copy p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.resume-download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.65rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.resume-download-link svg {
+  width: 1rem;
+}
+
+.resume-download-link:hover,
+.resume-download-link:focus-visible {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+.contact-card {
+  display: block;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+  align-items: start;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+.contact-copy > p:not(.section-label) {
+  margin-top: 1rem;
+}
+
+.contact-note {
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--accent);
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+.contact-channel-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.contact-channel {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface-solid);
+  color: var(--text);
+  text-decoration: none;
+  transition:
+    border-color var(--transition),
+    background-color var(--transition),
+    transform var(--transition);
+}
+
+.contact-channel:hover,
+.contact-channel:focus-visible {
+  border-color: var(--border-strong);
+  background: var(--surface-muted);
+  transform: translateX(4px);
+}
+
+.contact-channel-icon {
+  display: grid;
+  width: 2.55rem;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.contact-channel-icon svg {
+  width: 1.15rem;
+}
+
+.contact-channel strong,
+.contact-channel small {
+  display: block;
+}
+
+.contact-channel strong {
+  color: var(--text-strong);
+  font-size: 0.9rem;
+}
+
+.contact-channel small {
+  margin-top: 0.15rem;
+  color: var(--text-muted);
+  font-size: 0.74rem;
+}
+
+.contact-actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.copy-email-button {
+  cursor: pointer;
+}
+
+.copy-email-button.is-success {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.copy-feedback {
+  min-height: 1.25rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+@media (max-width: 980px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .resume-panel,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    min-height: auto;
+  }
+
+  .resume-panel {
+    padding: 1.25rem;
+  }
+
+  .resume-file-card {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .resume-download-link {
+    grid-column: 1 / -1;
+    justify-content: center;
+    border: 1px solid var(--border);
+  }
+
+  .contact-layout {
+    gap: 1.5rem;
+  }
+
+  .contact-actions-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .copy-feedback {
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-card,
+  .contact-channel {
+    transition: none;
+  }
+}

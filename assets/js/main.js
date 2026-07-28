@@ -149,3 +149,51 @@ if (reducedMotion || !("IntersectionObserver" in window)) {
 
   revealElements.forEach((element) => revealObserver.observe(element));
 }
+
+
+const copyEmailButton = document.querySelector("[data-copy-email]");
+const copyFeedback = document.querySelector("[data-copy-feedback]");
+let copyFeedbackTimer;
+
+async function copyTextToClipboard(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+
+  const temporaryInput = document.createElement("textarea");
+  temporaryInput.value = text;
+  temporaryInput.setAttribute("readonly", "");
+  temporaryInput.style.position = "fixed";
+  temporaryInput.style.opacity = "0";
+  document.body.appendChild(temporaryInput);
+  temporaryInput.select();
+
+  const copied = document.execCommand("copy");
+  temporaryInput.remove();
+
+  if (!copied) {
+    throw new Error("Clipboard copy failed");
+  }
+}
+
+if (copyEmailButton && copyFeedback) {
+  copyEmailButton.addEventListener("click", async () => {
+    const email = copyEmailButton.dataset.copyEmail;
+
+    try {
+      await copyTextToClipboard(email);
+      copyFeedback.textContent = copyEmailButton.dataset.successLabel;
+      copyEmailButton.classList.add("is-success");
+    } catch (error) {
+      copyFeedback.textContent = copyEmailButton.dataset.errorLabel;
+      copyEmailButton.classList.remove("is-success");
+    }
+
+    window.clearTimeout(copyFeedbackTimer);
+    copyFeedbackTimer = window.setTimeout(() => {
+      copyFeedback.textContent = "";
+      copyEmailButton.classList.remove("is-success");
+    }, 3000);
+  });
+}

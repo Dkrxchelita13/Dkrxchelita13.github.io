@@ -54,9 +54,14 @@ summaryLength = 30
   weight = 40
 
 [[languages.es.menus.main]]
+  name = "Habilidades"
+  url = "/#habilidades"
+  weight = 50
+
+[[languages.es.menus.main]]
   name = "Contacto"
   url = "/#contacto"
-  weight = 50
+  weight = 60
 
 [[languages.en.menus.main]]
   name = "Home"
@@ -79,9 +84,14 @@ summaryLength = 30
   weight = 40
 
 [[languages.en.menus.main]]
+  name = "Skills"
+  url = "/en/#skills"
+  weight = 50
+
+[[languages.en.menus.main]]
   name = "Contact"
   url = "/en/#contact"
-  weight = 50
+  weight = 60
 
 [markup]
   [markup.goldmark]
