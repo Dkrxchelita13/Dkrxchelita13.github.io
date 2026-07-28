@@ -1,0 +1,48 @@
+{{- $project := . -}}
+{{- $cover := resources.Get $project.Params.cover -}}
+<article class="portfolio-project-card reveal">
+  <a class="project-cover" href="{{ $project.RelPermalink }}" aria-label="{{ if eq site.Language.Lang "es" }}Abrir proyecto{{ else }}Open project{{ end }}: {{ $project.Title }}">
+    {{ with $cover }}
+      <img src="{{ .RelPermalink }}"
+           width="1200"
+           height="675"
+           alt="{{ $project.Params.cover_alt }}"
+           loading="lazy">
+    {{ end }}
+    <span class="project-status">{{ $project.Params.status }}</span>
+  </a>
+
+  <div class="project-card-body">
+    <div class="project-card-meta">
+      <span>{{ $project.Params.category }}</span>
+      <span aria-hidden="true">·</span>
+      <span>{{ $project.Params.year }}</span>
+    </div>
+
+    <h3><a href="{{ $project.RelPermalink }}">{{ $project.Title }}</a></h3>
+    <p>{{ $project.Description }}</p>
+
+    {{ with $project.Params.card_points }}
+      <ul class="project-card-points">
+        {{ range first 3 . }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    {{ end }}
+
+    {{ with $project.Params.stack }}
+      <ul class="tag-list project-stack-preview" aria-label="{{ if eq site.Language.Lang "es" }}Tecnologías{{ else }}Technologies{{ end }}">
+        {{ range first 6 . }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    {{ end }}
+
+    <a class="text-link project-card-link" href="{{ $project.RelPermalink }}">
+      {{ if eq site.Language.Lang "es" }}Ver caso completo{{ else }}View full case study{{ end }}
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="m5 12 14 0M13 6l6 6-6 6"></path>
+      </svg>
+    </a>
+  </div>
+</article>

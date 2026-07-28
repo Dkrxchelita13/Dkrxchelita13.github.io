@@ -142,6 +142,11 @@ languages:
     level: "HSK 2"
     evidence: "Continuous learning"
 
+projects_section_label: "PROJECTS"
+projects_section_title: "Solutions built from end to end"
+projects_section_intro: "My main projects combine backend development, security, networking, data, automation, and technical documentation. Each case explains the problem, my contribution, and the implementation decisions."
+projects_all_button: "Explore all projects"
+
 philosophy_label: "WORKING METHOD"
 philosophy_title: "Security and automation by design"
 philosophy_text: "I seek to understand the full problem before choosing a technology. I document decisions, test components, and consider security, user experience, and operational continuity from the start."

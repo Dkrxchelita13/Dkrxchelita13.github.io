@@ -142,6 +142,11 @@ languages:
     level: "HSK 2"
     evidence: "En aprendizaje continuo"
 
+projects_section_label: "PROYECTOS"
+projects_section_title: "Soluciones construidas de principio a fin"
+projects_section_intro: "Mis proyectos principales integran backend, seguridad, redes, datos, automatización y documentación técnica. Cada caso explica el problema, mi contribución y las decisiones de implementación."
+projects_all_button: "Explorar todos los proyectos"
+
 philosophy_label: "FORMA DE TRABAJO"
 philosophy_title: "Seguridad y automatización desde el diseño"
 philosophy_text: "Busco entender el problema completo antes de elegir una tecnología. Documento decisiones, pruebo los componentes y considero desde el inicio la seguridad, la experiencia de uso y la continuidad operativa."

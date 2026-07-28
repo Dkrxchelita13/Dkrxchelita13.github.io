@@ -1,0 +1,148 @@
+{{ define "main" }}
+  {{ $cover := resources.Get .Params.cover }}
+  <article class="project-detail">
+    <header class="project-detail-hero">
+      <div class="page-header-grid" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+
+      <div class="container project-detail-grid">
+        <div class="project-detail-copy reveal">
+          <a class="project-back-link" href="{{ "projects/" | relLangURL }}">
+            <span aria-hidden="true">←</span>
+            {{ if eq site.Language.Lang "es" }}Todos los proyectos{{ else }}All projects{{ end }}
+          </a>
+
+          <div class="project-detail-badges">
+            <span class="project-status">{{ .Params.status }}</span>
+            <span>{{ .Params.category }}</span>
+          </div>
+
+          <h1>{{ .Title }}</h1>
+          <p class="lead">{{ .Description }}</p>
+
+          <div class="project-detail-actions">
+            {{ with .Params.github_url }}
+              <a class="button button-primary" href="{{ . }}" target="_blank" rel="noopener noreferrer">
+                GitHub
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 14 0M13 6l6 6-6 6"></path></svg>
+              </a>
+            {{ end }}
+            {{ with .Params.live_url }}
+              <a class="button button-secondary" href="{{ . }}" target="_blank" rel="noopener noreferrer">
+                {{ if eq site.Language.Lang "es" }}Ver demostración{{ else }}View demo{{ end }}
+              </a>
+            {{ end }}
+          </div>
+
+          {{ with .Params.repository_note }}
+            <p class="repository-note">{{ . }}</p>
+          {{ end }}
+        </div>
+
+        <div class="project-detail-visual reveal">
+          {{ with $cover }}
+            <img src="{{ .RelPermalink }}"
+                 width="1200"
+                 height="675"
+                 alt="{{ $.Params.cover_alt }}">
+          {{ end }}
+        </div>
+      </div>
+
+      <div class="container project-facts reveal">
+        <div>
+          <span>{{ if eq site.Language.Lang "es" }}Rol{{ else }}Role{{ end }}</span>
+          <strong>{{ .Params.role }}</strong>
+        </div>
+        <div>
+          <span>{{ if eq site.Language.Lang "es" }}Periodo{{ else }}Period{{ end }}</span>
+          <strong>{{ .Params.period }}</strong>
+        </div>
+        <div>
+          <span>{{ if eq site.Language.Lang "es" }}Enfoque{{ else }}Focus{{ end }}</span>
+          <strong>{{ .Params.focus }}</strong>
+        </div>
+        <div>
+          <span>{{ if eq site.Language.Lang "es" }}Tipo{{ else }}Type{{ end }}</span>
+          <strong>{{ .Params.project_type }}</strong>
+        </div>
+      </div>
+    </header>
+
+    <section class="section project-detail-content">
+      <div class="container project-content-grid">
+        <div class="prose project-prose reveal">
+          {{ .Content }}
+        </div>
+
+        <aside class="project-sidebar reveal">
+          <section class="project-sidebar-card">
+            <p class="project-sidebar-label">STACK</p>
+            <ul class="project-stack-list">
+              {{ range .Params.stack }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          </section>
+
+          <section class="project-sidebar-card">
+            <p class="project-sidebar-label">{{ if eq site.Language.Lang "es" }}RESPONSABILIDADES{{ else }}RESPONSIBILITIES{{ end }}</p>
+            <ul class="project-sidebar-list">
+              {{ range .Params.responsibilities }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          </section>
+
+          {{ with .Params.key_outputs }}
+            <section class="project-sidebar-card">
+              <p class="project-sidebar-label">{{ if eq site.Language.Lang "es" }}ENTREGABLES{{ else }}KEY OUTPUTS{{ end }}</p>
+              <ul class="project-sidebar-list">
+                {{ range . }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            </section>
+          {{ end }}
+        </aside>
+      </div>
+    </section>
+
+    {{ with .Params.gallery }}
+      <section class="section project-gallery-section">
+        <div class="container">
+          <div class="subsection-heading reveal">
+            <p class="section-label">{{ if eq site.Language.Lang "es" }}EVIDENCIAS VISUALES{{ else }}VISUAL EVIDENCE{{ end }}</p>
+          </div>
+          <div class="project-gallery">
+            {{ range . }}
+              {{ $item := . }}
+              {{ $image := resources.Get $item.src }}
+              {{ with $image }}
+                <figure class="reveal">
+                  <img src="{{ .RelPermalink }}" alt="{{ $item.alt }}" loading="lazy">
+                  <figcaption>{{ $item.caption }}</figcaption>
+                </figure>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </section>
+    {{ end }}
+
+    <section class="section project-next-step-section">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div>
+            <p class="section-label">{{ if eq site.Language.Lang "es" }}SIGUIENTE PASO{{ else }}NEXT STEP{{ end }}</p>
+            <h2>{{ if eq site.Language.Lang "es" }}¿Este proyecto se relaciona con tu equipo o vacante?{{ else }}Does this project relate to your team or open role?{{ end }}</h2>
+            <p>{{ if eq site.Language.Lang "es" }}Puedo explicar las decisiones técnicas, pruebas, documentación y aprendizajes detrás de la implementación.{{ else }}I can explain the technical decisions, tests, documentation, and lessons behind the implementation.{{ end }}</p>
+          </div>
+          <a class="button button-primary" href="mailto:{{ site.Params.email }}">
+            {{ if eq site.Language.Lang "es" }}Contactarme{{ else }}Contact me{{ end }}
+          </a>
+        </div>
+      </div>
+    </section>
+  </article>
+{{ end }}

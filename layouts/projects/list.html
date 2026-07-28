@@ -1,0 +1,68 @@
+{{ define "main" }}
+  <section class="projects-page-hero">
+    <div class="page-header-grid" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+
+    <div class="container projects-page-heading reveal">
+      <a class="project-back-link" href="{{ site.Home.RelPermalink }}">
+        <span aria-hidden="true">←</span>
+        {{ if eq site.Language.Lang "es" }}Volver al inicio{{ else }}Back home{{ end }}
+      </a>
+
+      <p class="section-label">{{ if eq site.Language.Lang "es" }}PORTAFOLIO TÉCNICO{{ else }}TECHNICAL PORTFOLIO{{ end }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+
+      {{ with .Params.intro_points }}
+        <ul class="projects-intro-points">
+          {{ range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="section projects-catalog-section">
+    <div class="container">
+      <div class="projects-catalog-toolbar reveal">
+        <p>
+          {{ if eq site.Language.Lang "es" }}
+            Casos documentados con problema, contribución, arquitectura y tecnologías.
+          {{ else }}
+            Documented case studies covering the problem, contribution, architecture, and technologies.
+          {{ end }}
+        </p>
+        <span>{{ len .Pages }} {{ if eq site.Language.Lang "es" }}proyectos{{ else }}projects{{ end }}</span>
+      </div>
+
+      {{ if .Pages }}
+        <div class="portfolio-project-grid">
+          {{ range .Pages.ByWeight }}
+            {{ partial "project-card.html" . }}
+          {{ end }}
+        </div>
+      {{ else }}
+        <div class="empty-state reveal">
+          <p>{{ .Params.empty_message }}</p>
+          <a class="button button-secondary" href="{{ site.Home.RelPermalink }}">
+            {{ if eq site.Language.Lang "es" }}Volver al inicio{{ else }}Back home{{ end }}
+          </a>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="section project-contact-section">
+    <div class="container">
+      <div class="contact-card reveal">
+        <div>
+          <p class="section-label">{{ if eq site.Language.Lang "es" }}COLABORACIÓN{{ else }}COLLABORATION{{ end }}</p>
+          <h2>{{ .Params.contact_title }}</h2>
+          <p>{{ .Params.contact_text }}</p>
+        </div>
+        <a class="button button-primary" href="mailto:{{ site.Params.email }}">
+          {{ if eq site.Language.Lang "es" }}Contactarme{{ else }}Contact me{{ end }}
+        </a>
+      </div>
+    </div>
+  </section>
+{{ end }}
