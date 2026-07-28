@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">NetAdmin API</title>
+  <desc id="desc">Dispositivos conectados a una API central con terminal, inventario y automatización.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset=".62" stop-color="#0b2536"/>
+      <stop offset="1" stop-color="#12344c"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.3" fill="#8fabc9" opacity=".14"/>
+    </pattern>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="10"/></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#dots)"/>
+  <circle cx="600" cy="300" r="155" fill="#5eead4" opacity=".07" filter="url(#soft)"/>
+
+  <g fill="none" stroke="url(#line)" stroke-width="4" stroke-opacity=".75">
+    <path d="M270 175 475 275"/>
+    <path d="M270 410 475 322"/>
+    <path d="M930 165 725 275"/>
+    <path d="M930 425 725 322"/>
+  </g>
+
+  <g transform="translate(450 190)">
+    <rect width="300" height="225" rx="30" fill="#0d1b2d" stroke="#5eead4" stroke-width="3"/>
+    <rect x="30" y="35" width="240" height="48" rx="12" fill="#10243a"/>
+    <circle cx="54" cy="59" r="7" fill="#5eead4"/>
+    <path d="M78 59h156" stroke="#8fabc9" stroke-opacity=".6" stroke-width="6"/>
+    <rect x="30" y="100" width="240" height="48" rx="12" fill="#10243a"/>
+    <circle cx="54" cy="124" r="7" fill="#a78bfa"/>
+    <path d="M78 124h115" stroke="#8fabc9" stroke-opacity=".6" stroke-width="6"/>
+    <rect x="30" y="165" width="240" height="30" rx="10" fill="#5eead4" opacity=".13"/>
+    <text x="63" y="187" fill="#5eead4" font-family="Consolas, monospace" font-size="18">/api/devices</text>
+  </g>
+
+  <g transform="translate(125 95)">
+    <rect width="260" height="145" rx="24" fill="#0d1b2d" stroke="#5eead4" stroke-opacity=".45"/>
+    <path d="M30 42h200M30 75h154M30 108h118" stroke="#8fabc9" stroke-linecap="round" stroke-width="8" stroke-opacity=".45"/>
+    <circle cx="219" cy="108" r="10" fill="#5eead4"/>
+  </g>
+
+  <g transform="translate(120 365)">
+    <rect width="270" height="150" rx="24" fill="#06101c" stroke="#a78bfa" stroke-opacity=".55"/>
+    <circle cx="34" cy="30" r="6" fill="#ff7b72"/>
+    <circle cx="56" cy="30" r="6" fill="#f2cc60"/>
+    <circle cx="78" cy="30" r="6" fill="#5eead4"/>
+    <text x="28" y="75" fill="#5eead4" font-family="Consolas, monospace" font-size="18">$ scan 192.168.1.0/28</text>
+    <text x="28" y="108" fill="#a8bad0" font-family="Consolas, monospace" font-size="17">host found: 192.168.1.1</text>
+  </g>
+
+  <g transform="translate(825 92)">
+    <rect width="255" height="145" rx="24" fill="#0d1b2d" stroke="#5eead4" stroke-opacity=".45"/>
+    <circle cx="65" cy="72" r="28" fill="#5eead4" opacity=".15"/>
+    <path d="M65 50v44M43 72h44" stroke="#5eead4" stroke-linecap="round" stroke-width="7"/>
+    <text x="115" y="67" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="20" font-weight="700">INVENTORY</text>
+    <text x="115" y="93" fill="#a8bad0" font-family="Arial, sans-serif" font-size="16">SQLite history</text>
+  </g>
+
+  <g transform="translate(820 365)">
+    <rect width="270" height="150" rx="24" fill="#0d1b2d" stroke="#a78bfa" stroke-opacity=".55"/>
+    <path d="M30 112 75 77l38 20 45-58 72 47" fill="none" stroke="#5eead4" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="158" cy="39" r="8" fill="#a78bfa"/>
+    <text x="30" y="32" fill="#a8bad0" font-family="Consolas, monospace" font-size="17">monitoring.dashboard</text>
+  </g>
+
+  <text x="76" y="608" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="54" font-weight="700">NetAdmin API</text>
+  <text x="78" y="642" fill="#a8bad0" font-family="Arial, sans-serif" font-size="21">Inventory · Monitoring · Network Automation</text>
+</svg>

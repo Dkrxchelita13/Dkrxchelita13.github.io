@@ -1,0 +1,20 @@
+{{ define "main" }}
+  <article>
+    <header class="page-header">
+      <div class="page-header-grid" aria-hidden="true"></div>
+      <div class="container narrow reveal">
+        <p class="section-label">{{ upper .Section }}</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+      </div>
+    </header>
+
+    <div class="section">
+      <div class="container narrow">
+        <div class="prose reveal">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </article>
+{{ end }}

@@ -1,0 +1,103 @@
+{{- $pageTitle := site.Title -}}
+{{- if not .IsHome -}}
+  {{- $pageTitle = printf "%s | %s" .Title site.Title -}}
+{{- end -}}
+{{- $description := .Params.seo_description | default .Description | default site.Language.Params.description | default site.Params.description -}}
+{{- $description = $description | plainify | truncate 165 -}}
+{{- $keywords := .Params.keywords | default site.Params.keywords -}}
+{{- $imagePath := .Params.og_image | default site.Params.ogImage -}}
+{{- $imageURL := $imagePath | absURL -}}
+{{- $robots := "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" -}}
+{{- if .Params.noindex -}}
+  {{- $robots = "noindex, nofollow" -}}
+{{- end -}}
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<title>{{ $pageTitle }}</title>
+<meta name="description" content="{{ $description }}">
+<meta name="author" content="{{ site.Params.author }}">
+<meta name="robots" content="{{ $robots }}">
+<meta name="color-scheme" content="dark light">
+<meta id="theme-color-meta" name="theme-color" content="#07111f">
+{{ with $keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}
+
+{{ $themeInit := resources.Get "js/theme-init.js" | minify | fingerprint }}
+<script src="{{ $themeInit.RelPermalink }}" integrity="{{ $themeInit.Data.Integrity }}"></script>
+
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
+<link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
+
+{{ range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}">
+{{ end }}
+{{ with index .AllTranslations 0 }}
+  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+{{ end }}
+{{ with .OutputFormats.Get "rss" }}
+  <link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .Permalink }}">
+{{ end }}
+
+<meta property="og:title" content="{{ $pageTitle }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:locale" content="{{ replace site.Language.Locale "-" "_" }}">
+<meta property="og:image" content="{{ $imageURL }}">
+<meta property="og:image:secure_url" content="{{ $imageURL }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ .Params.og_image_alt | default $pageTitle }}">
+{{ range .AllTranslations }}
+  {{ if ne .Language.Locale site.Language.Locale }}
+    <meta property="og:locale:alternate" content="{{ replace .Language.Locale "-" "_" }}">
+  {{ end }}
+{{ end }}
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $pageTitle }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:image" content="{{ $imageURL }}">
+<meta name="twitter:image:alt" content="{{ .Params.og_image_alt | default $pageTitle }}">
+
+{{ if .IsHome }}
+  {{ $person := dict
+    "@context" "https://schema.org"
+    "@type" "Person"
+    "name" site.Params.author
+    "url" .Permalink
+    "email" (printf "mailto:%s" site.Params.email)
+    "jobTitle" (cond (eq site.Language.Name "es") "Estudiante de Ingeniería en Redes Inteligentes y Ciberseguridad" "Smart Networks and Cybersecurity Engineering student")
+    "image" $imageURL
+    "sameAs" (slice site.Params.github site.Params.linkedin)
+    "knowsAbout" site.Params.keywords
+    "address" (dict "@type" "PostalAddress" "addressLocality" "Córdoba" "addressRegion" "Veracruz" "addressCountry" "MX")
+  }}
+  <script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
+{{ else if and .IsPage (eq .Section "projects") }}
+  {{ $project := dict
+    "@context" "https://schema.org"
+    "@type" "CreativeWork"
+    "name" .Title
+    "description" $description
+    "url" .Permalink
+    "image" $imageURL
+    "inLanguage" site.Language.Locale
+    "creator" (dict "@type" "Person" "name" site.Params.author "url" site.Home.Permalink)
+    "keywords" (.Params.stack | default site.Params.keywords)
+  }}
+  <script type="application/ld+json">{{ $project | jsonify | safeJS }}</script>
+{{ end }}
+
+{{ if .IsHome }}
+  {{ with resources.Get "images/profile/luz-torales.png" }}
+    <link rel="preload" as="image" href="{{ .RelPermalink }}" fetchpriority="high">
+  {{ end }}
+{{ end }}
+
+{{ $styles := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">

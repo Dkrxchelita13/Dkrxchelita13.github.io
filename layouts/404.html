@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <section class="section error-page">
+    <div class="container narrow">
+      <p class="section-label">404</p>
+      <h1>{{ if eq site.Language.Name "es" }}Página no encontrada{{ else }}Page not found{{ end }}</h1>
+      <a class="button button-primary" href="{{ site.Home.RelPermalink }}">
+        {{ if eq site.Language.Name "es" }}Volver al inicio{{ else }}Back home{{ end }}
+      </a>
+    </div>
+  </section>
+{{ end }}

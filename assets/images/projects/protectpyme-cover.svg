@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">ProtectPYME</title>
+  <desc id="desc">Escudo digital conectado con un videojuego, analítica e inteligencia artificial.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.55" stop-color="#0c2637"/>
+      <stop offset="1" stop-color="#271c4d"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#8fabc9" stroke-opacity=".09"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+  <circle cx="1030" cy="95" r="180" fill="#a78bfa" opacity=".11"/>
+  <circle cx="170" cy="590" r="220" fill="#5eead4" opacity=".08"/>
+
+  <g opacity=".5" stroke="#5eead4" stroke-width="2">
+    <path d="M190 195 360 300 214 458" fill="none"/>
+    <path d="M1010 185 846 297 990 464" fill="none"/>
+    <circle cx="190" cy="195" r="11" fill="#07111f"/>
+    <circle cx="214" cy="458" r="11" fill="#07111f"/>
+    <circle cx="1010" cy="185" r="11" fill="#07111f"/>
+    <circle cx="990" cy="464" r="11" fill="#07111f"/>
+  </g>
+
+  <g transform="translate(390 105)">
+    <path d="M210 5 390 72v116c0 127-78 220-180 263C108 408 30 315 30 188V72L210 5Z" fill="#0a1728" stroke="url(#shield)" stroke-width="9" filter="url(#glow)"/>
+    <path d="M210 55 338 103v85c0 89-52 158-128 195-76-37-128-106-128-195v-85L210 55Z" fill="url(#shield)" opacity=".15"/>
+    <path d="m143 205 48 48 94-106" fill="none" stroke="#5eead4" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"/>
+  </g>
+
+  <g transform="translate(120 80)">
+    <rect width="240" height="118" rx="22" fill="#0d1b2d" stroke="#5eead4" stroke-opacity=".55"/>
+    <circle cx="56" cy="59" r="25" fill="#5eead4" opacity=".18"/>
+    <path d="M56 43v32M40 59h32" stroke="#5eead4" stroke-linecap="round" stroke-width="7"/>
+    <circle cx="179" cy="50" r="8" fill="#a78bfa"/>
+    <circle cx="202" cy="69" r="8" fill="#5eead4"/>
+    <path d="M154 84h62" stroke="#8fabc9" stroke-opacity=".45" stroke-width="5"/>
+  </g>
+
+  <g transform="translate(842 94)">
+    <rect width="245" height="125" rx="22" fill="#0d1b2d" stroke="#a78bfa" stroke-opacity=".65"/>
+    <path d="M35 86 75 55l35 16 42-42 55 31" fill="none" stroke="#5eead4" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+    <circle cx="75" cy="55" r="7" fill="#a78bfa"/>
+    <circle cx="152" cy="29" r="7" fill="#a78bfa"/>
+    <path d="M35 101h174" stroke="#8fabc9" stroke-opacity=".25" stroke-width="3"/>
+  </g>
+
+  <g transform="translate(785 452)">
+    <rect width="300" height="105" rx="20" fill="#0d1b2d" stroke="#5eead4" stroke-opacity=".35"/>
+    <text x="26" y="42" fill="#a8bad0" font-family="Consolas, monospace" font-size="19">risk_level:</text>
+    <text x="170" y="42" fill="#5eead4" font-family="Consolas, monospace" font-size="19" font-weight="700">ADAPTIVE</text>
+    <text x="26" y="75" fill="#a8bad0" font-family="Consolas, monospace" font-size="19">next_scenario:</text>
+    <text x="210" y="75" fill="#a78bfa" font-family="Consolas, monospace" font-size="19">03</text>
+  </g>
+
+  <text x="80" y="615" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="54" font-weight="700">ProtectPYME</text>
+  <text x="82" y="648" fill="#a8bad0" font-family="Arial, sans-serif" font-size="21">Cybersecurity · Gamification · Adaptive AI</text>
+</svg>

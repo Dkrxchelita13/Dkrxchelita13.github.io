@@ -1,4 +1,28 @@
-resources/*
-node_modules/*
-public/*
-.Rproj.user
+# Hugo
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Dependencies and reports
+node_modules/
+coverage/
+.lighthouseci/
+*.log
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local environment files
+.env
+.env.*
+
+if (-not (Select-String -Path .\.gitignore -Pattern '^__pycache__/$' -Quiet)) {
+    Add-Content .\.gitignore "`n__pycache__/"
+}
+
+if (-not (Select-String -Path .\.gitignore -Pattern '^\*\.py\[cod\]$' -Quiet)) {
+    Add-Content .\.gitignore "*.py[cod]"
+}

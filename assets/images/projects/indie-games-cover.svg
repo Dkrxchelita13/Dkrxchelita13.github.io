@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Desarrollo de videojuegos indie</title>
+  <desc id="desc">Escena pixel art con un mando, una ventana de código y objetos de un videojuego 2D.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111326"/>
+      <stop offset=".55" stop-color="#251b47"/>
+      <stop offset="1" stop-color="#0d3040"/>
+    </linearGradient>
+    <pattern id="pixels" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="2" height="2" fill="#a78bfa" opacity=".14"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#pixels)"/>
+  <circle cx="930" cy="120" r="160" fill="#a78bfa" opacity=".11"/>
+  <circle cx="170" cy="500" r="200" fill="#5eead4" opacity=".08"/>
+
+  <g transform="translate(380 125)">
+    <path d="M105 105c45-50 225-50 270 0l45 132c18 53-49 91-84 49l-42-49H186l-42 49c-35 42-102 4-84-49l45-132Z" fill="#0d1b2d" stroke="#a78bfa" stroke-width="7"/>
+    <rect x="128" y="142" width="86" height="24" rx="8" fill="#5eead4" opacity=".22"/>
+    <rect x="159" y="111" width="24" height="86" rx="8" fill="#5eead4" opacity=".22"/>
+    <circle cx="315" cy="140" r="18" fill="#5eead4"/>
+    <circle cx="354" cy="181" r="18" fill="#a78bfa"/>
+    <circle cx="271" cy="199" r="12" fill="#8fabc9"/>
+  </g>
+
+  <g shape-rendering="crispEdges">
+    <rect x="135" y="155" width="44" height="44" fill="#5eead4"/>
+    <rect x="179" y="199" width="44" height="44" fill="#5eead4"/>
+    <rect x="135" y="243" width="44" height="44" fill="#5eead4"/>
+    <rect x="91" y="199" width="44" height="44" fill="#5eead4"/>
+    <rect x="950" y="175" width="38" height="38" fill="#a78bfa"/>
+    <rect x="988" y="213" width="38" height="38" fill="#a78bfa"/>
+    <rect x="912" y="213" width="38" height="38" fill="#a78bfa"/>
+  </g>
+
+  <g transform="translate(100 355)">
+    <rect width="345" height="155" rx="18" fill="#06101c" stroke="#5eead4" stroke-opacity=".45"/>
+    <circle cx="30" cy="27" r="6" fill="#ff7b72"/>
+    <circle cx="52" cy="27" r="6" fill="#f2cc60"/>
+    <circle cx="74" cy="27" r="6" fill="#5eead4"/>
+    <text x="28" y="70" fill="#a78bfa" font-family="Consolas, monospace" font-size="18">func _process(delta):</text>
+    <text x="48" y="102" fill="#a8bad0" font-family="Consolas, monospace" font-size="18">player.move(delta)</text>
+    <text x="48" y="132" fill="#5eead4" font-family="Consolas, monospace" font-size="18">emit_signal("score")</text>
+  </g>
+
+  <g transform="translate(795 350)" shape-rendering="crispEdges">
+    <rect width="270" height="160" rx="18" fill="#0d1b2d" stroke="#a78bfa" stroke-opacity=".45"/>
+    <rect x="24" y="112" width="222" height="22" fill="#2dd4bf" opacity=".75"/>
+    <rect x="48" y="70" width="34" height="42" fill="#f4f7fb"/>
+    <rect x="55" y="54" width="20" height="18" fill="#a78bfa"/>
+    <rect x="175" y="82" width="28" height="30" fill="#f2cc60"/>
+    <rect x="168" y="72" width="42" height="10" fill="#f2cc60"/>
+    <circle cx="220" cy="45" r="18" fill="#5eead4" opacity=".85"/>
+  </g>
+
+  <text x="76" y="608" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="54" font-weight="700">Indie Game Development</text>
+  <text x="78" y="642" fill="#a8bad0" font-family="Arial, sans-serif" font-size="21">Godot · 2D Mechanics · Self-Directed Learning</text>
+</svg>
